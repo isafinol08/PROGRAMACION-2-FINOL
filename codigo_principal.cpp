@@ -228,7 +228,7 @@ public:
         return true;
     }
 
-    int contarOrdenesDeVehiculo(int idVehiculo) const {
+    int contarOrdenesDeVehiculo(int) const {
         return 0; // Sin ordenes activas en esta version reducida
     }
 };
