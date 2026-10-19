@@ -1,20 +1,3 @@
-// ====================================================================
-//  PROYECTO 1 - SISTEMA DE GESTION DE TALLER MECANICO
-//  Programacion 2 - 2026-C
-//
-//  Todo el programa esta en UN SOLO archivo (sin archivos .h).
-//
-//  Compilar : g++ -std=c++11 -Wall -Wextra -o taller taller.cpp
-//  Ejecutar : ./taller
-//  Pruebas  : ./taller < pruebas/entrada.txt > pruebas/salida.txt
-//
-//  ORGANIZACION DEL ARCHIVO (de arriba hacia abajo):
-//    1. Estructuras de datos
-//    2. CAPA DE LOGICA        (sin cin / cout)
-//    3. CAPA DE PRESENTACION  (cin / cout / menus)
-//    4. main
-// ====================================================================
-
 #include <iostream>
 #include <cstring>
 #include <cstdio>
@@ -827,6 +810,7 @@ OrdenServicio** listarOrdenesPorVehiculo(SistemaTaller* s, int idVehiculo, int* 
 //     Estas funciones NO modifican datos directamente: siempre llaman
 //     a las funciones de la capa de logica.
 // ====================================================================
+// ====================================================================
 
 // --------------------------------------------------------------------
 //  3.1 Lectura de datos del usuario
@@ -1086,7 +1070,6 @@ const int ANCHO_CAJA = 64;
 void imprimirLineaCaja(const char* texto) {
     cout << "| "; imprimirPad(texto, ANCHO_CAJA - 2, false); cout << " |\n";
 }
-
 // --------------------------------------------------------------------
 //  3.3 VEHICULOS (presentacion)
 // --------------------------------------------------------------------
@@ -1296,4 +1279,128 @@ void submenuVehiculos(SistemaTaller* s) {
             case 5: menuListarVehiculos(s); break;
         }
     }
+}
+
+// --------------------------------------------------------------------
+//  3.4 MECANICOS (presentacion)
+// --------------------------------------------------------------------
+
+void mostrarMecanico(SistemaTaller* s, Mecanico* m) {
+    cout << "  Mecanico      : " << m->nombre << "  (ID " << m->id << ")\n";
+    cout << "  Cedula        : " << m->cedula << "\n";
+    cout << "  Especialidad  : " << m->especialidad << "\n";
+    cout << "  Fecha ingreso : " << m->fechaIngreso << "\n";
+    cout << "  Ordenes abiertas: " << contarOrdenesAbiertasDeMecanico(s, m->id) << "\n";
+}
+
+void mostrarListaMecanicos(SistemaTaller* s, Mecanico** lista, int cantidad) {
+    if (cantidad == 0) {
+        cout << "No hay mecanicos registrados.\n";
+        return;
+    }
+    const int anchos[] = {4, 26, 14, 16, 12, 10};
+    const bool der[]   = {true, false, false, false, false, true};
+    const char* titulos[] = {"ID", "Nombre", "Cedula", "Especialidad", "Ingreso", "Abiertas"};
+
+    imprimirBorde("+", "+", "+", anchos, 6);
+    imprimirFila(titulos, anchos, der, 6);
+    imprimirBorde("+", "+", "+", anchos, 6);
+    for (int i = 0; i < cantidad; i++) {
+        char id[20], abiertas[20];
+        snprintf(id, sizeof(id), "%d", lista[i]->id);
+        snprintf(abiertas, sizeof(abiertas), "%d", contarOrdenesAbiertasDeMecanico(s, lista[i]->id));
+        const char* fila[] = {id, lista[i]->nombre, lista[i]->cedula, lista[i]->especialidad,
+                              lista[i]->fechaIngreso, abiertas};
+        imprimirFila(fila, anchos, der, 6);
+    }
+    imprimirBorde("+", "+", "+", anchos, 6);
+    cout << "Total de mecanicos: " << cantidad << "\n";
+}
+
+void menuRegistrarMecanico(SistemaTaller* s) {
+    Mecanico nuevo;
+    memset(&nuevo, 0, sizeof(nuevo));
+    cout << "\n--- REGISTRAR MECANICO (escriba CANCELAR para abortar) ---\n";
+
+    bool completo = pedirDato("Nombre completo: ", nuevo.nombre, sizeof(nuevo.nombre), DATO_TEXTO);
+    // La cedula debe ser unica: si ya existe, se vuelve a pedir
+    while (completo) {
+        completo = pedirDato("Cedula: ", nuevo.cedula, sizeof(nuevo.cedula), DATO_CEDULA);
+        if (!completo) break;
+        Mecanico* existente = buscarMecanicoPorCedula(s, nuevo.cedula);
+        if (existente == nullptr) break;
+        cout << "ERROR: La cedula '" << nuevo.cedula << "' ya pertenece al mecanico '" << existente->nombre << "'.\n";
+    }
+    completo = completo &&
+        pedirDato("Especialidad (MOTOR/FRENOS/ELECTRICIDAD/SUSPENSION/GENERAL): ", nuevo.especialidad, sizeof(nuevo.especialidad), DATO_ESPECIALIDAD) &&
+        pedirDato("Fecha de ingreso (YYYY-MM-DD): ", nuevo.fechaIngreso, sizeof(nuevo.fechaIngreso), DATO_FECHA);
+
+    if (!completo) {
+        cout << "Registro cancelado. No se creo ningun mecanico.\n";
+        return;
+    }
+    cout << "\nDatos a guardar: " << nuevo.nombre << " | Cedula " << nuevo.cedula << " | "
+         << nuevo.especialidad << " | Ingreso " << nuevo.fechaIngreso << "\n";
+    if (!pedirConfirmacion("Guardar este mecanico? (S/N): ")) {
+        cout << "Registro cancelado. No se creo ningun mecanico.\n";
+        return;
+    }
+    Resultado motivo;
+    Mecanico* creado = agregarMecanico(s, nuevo, &motivo);
+    if (creado != nullptr) {
+        cout << "Mecanico '" << creado->nombre << "' registrado correctamente (ID " << creado->id << ").\n";
+    } else if (motivo == RES_DUPLICADO) {
+        cout << "ERROR: La cedula '" << nuevo.cedula << "' ya esta registrada.\n";
+    } else {
+        cout << "ERROR: No se pudo registrar al mecanico '" << nuevo.nombre << "' (datos invalidos).\n";
+    }
+}
+
+void menuBuscarMecanico(SistemaTaller* s) {
+    int id;
+    cout << "\n--- BUSCAR MECANICO POR ID ---\n";
+    if (!pedirEntero("ID del mecanico: ", &id, 1, INT_MAX)) { cout << "Busqueda cancelada.\n"; return; }
+    Mecanico* m = buscarMecanicoPorID(s, id);
+    if (m == nullptr) cout << "ERROR: No existe un mecanico con ID " << id << ".\n";
+    else mostrarMecanico(s, m);
+}
+
+void menuListarMecanicos(SistemaTaller* s) {
+    cout << "\n--- LISTA DE MECANICOS ---\n";
+    int cantidad;
+    Mecanico** lista = listarMecanicos(s, &cantidad);
+    mostrarListaMecanicos(s, lista, cantidad);
+    delete[] lista;
+}
+
+void submenuMecanicos(SistemaTaller* s) {
+    const char* opciones[] = {"1. Registrar mecanico", "2. Buscar mecanico por ID",
+                              "3. Listar mecanicos", "0. Volver al menu principal"};
+    int op = -1;
+    while (op != 0 && !entradaTerminada) {
+        imprimirCajaMenu("GESTION DE MECANICOS", nullptr, opciones, 4);
+        op = pedirOpcion("Seleccione una opcion: ", 3);
+        if (entradaTerminada) break;
+        switch (op) {
+            case 1: menuRegistrarMecanico(s); break;
+            case 2: menuBuscarMecanico(s); break;
+            case 3: menuListarMecanicos(s); break;
+        }
+    }
+}
+
+// --------------------------------------------------------------------
+//  3.5 REPUESTOS (presentacion)
+// --------------------------------------------------------------------
+
+
+
+// ====================================================================
+//  4. main
+// ====================================================================
+
+int main() {
+  //  SistemaTaller sistema;el sistema vive en la pila; sus arreglos, en el heap
+    cout << "\nHasta pronto.\n";
+    return 0;
 }
