@@ -1,3 +1,20 @@
+// ====================================================================
+//  PROYECTO 1 - SISTEMA DE GESTION DE TALLER MECANICO
+//  Programacion 2 - 2026-C
+//
+//  Todo el programa esta en UN SOLO archivo (sin archivos .h).
+//
+//  Compilar : g++ -std=c++11 -Wall -Wextra -o taller taller.cpp
+//  Ejecutar : ./taller
+//  Pruebas  : ./taller < pruebas/entrada.txt > pruebas/salida.txt
+//
+//  ORGANIZACION DEL ARCHIVO (de arriba hacia abajo):
+//    1. Estructuras de datos
+//    2. CAPA DE LOGICA        (sin cin / cout)
+//    3. CAPA DE PRESENTACION  (cin / cout / menus)
+//    4. main
+// ====================================================================
+
 #include <iostream>
 #include <cstring>
 #include <cstdio>
@@ -986,6 +1003,28 @@ int pedirOpcion(const char* mensaje, int maxOpcion) {
     }
 }
 
+// Limpia la terminal. Solo actua cuando el programa se usa de forma
+// interactiva; si la entrada viene de un archivo (./taller < entrada.txt)
+// no hace nada, para que salida.txt quede completo.
+void limpiarPantalla() {
+    if (!ES_TERMINAL()) return;
+#ifdef _WIN32
+    int r = system("cls");
+#else
+    int r = system("clear");
+#endif
+    (void)r;
+}
+
+// Espera un ENTER para que el usuario alcance a leer el resultado antes de
+// que se limpie la pantalla. Tambien solo actua en modo interactivo.
+void pausar() {
+    if (!ES_TERMINAL()) return;
+    cout << "\nPresione ENTER para continuar...";
+    string descarte;
+    if (!getline(cin, descarte)) entradaTerminada = true;
+}
+
 // --------------------------------------------------------------------
 //  3.2 Utilidades de dibujo (cajas y tablas)
 //  Los caracteres con tilde ocupan 2 bytes en UTF-8; por eso se mide el
@@ -1070,6 +1109,7 @@ const int ANCHO_CAJA = 64;
 void imprimirLineaCaja(const char* texto) {
     cout << "| "; imprimirPad(texto, ANCHO_CAJA - 2, false); cout << " |\n";
 }
+
 // --------------------------------------------------------------------
 //  3.3 VEHICULOS (presentacion)
 // --------------------------------------------------------------------
@@ -1268,9 +1308,11 @@ void submenuVehiculos(SistemaTaller* s) {
                               "4. Eliminar vehiculo", "5. Listar vehiculos", "0. Volver al menu principal"};
     int op = -1;
     while (op != 0 && !entradaTerminada) {
+        limpiarPantalla();
         imprimirCajaMenu("GESTION DE VEHICULOS", nullptr, opciones, 6);
         op = pedirOpcion("Seleccione una opcion: ", 5);
         if (entradaTerminada) break;
+        if (op != 0) limpiarPantalla();
         switch (op) {
             case 1: menuRegistrarVehiculo(s); break;
             case 2: menuBuscarVehiculo(s); break;
@@ -1278,6 +1320,7 @@ void submenuVehiculos(SistemaTaller* s) {
             case 4: menuEliminarVehiculo(s); break;
             case 5: menuListarVehiculos(s); break;
         }
+        if (op != 0) pausar();
     }
 }
 
@@ -1378,14 +1421,17 @@ void submenuMecanicos(SistemaTaller* s) {
                               "3. Listar mecanicos", "0. Volver al menu principal"};
     int op = -1;
     while (op != 0 && !entradaTerminada) {
+        limpiarPantalla();
         imprimirCajaMenu("GESTION DE MECANICOS", nullptr, opciones, 4);
         op = pedirOpcion("Seleccione una opcion: ", 3);
         if (entradaTerminada) break;
+        if (op != 0) limpiarPantalla();
         switch (op) {
             case 1: menuRegistrarMecanico(s); break;
             case 2: menuBuscarMecanico(s); break;
             case 3: menuListarMecanicos(s); break;
         }
+        if (op != 0) pausar();
     }
 }
 
@@ -1559,9 +1605,11 @@ void submenuInventario(SistemaTaller* s) {
                               "0. Volver al menu principal"};
     int op = -1;
     while (op != 0 && !entradaTerminada) {
+        limpiarPantalla();
         imprimirCajaMenu("INVENTARIO DE REPUESTOS", nullptr, opciones, 7);
         op = pedirOpcion("Seleccione una opcion: ", 6);
         if (entradaTerminada) break;
+        if (op != 0) limpiarPantalla();
         switch (op) {
             case 1: menuRegistrarRepuesto(s); break;
             case 2: menuBuscarRepuesto(s); break;
@@ -1570,6 +1618,7 @@ void submenuInventario(SistemaTaller* s) {
             case 5: menuCambiarPrecio(s); break;
             case 6: menuEliminarRepuesto(s); break;
         }
+        if (op != 0) pausar();
     }
 }
 
@@ -1582,9 +1631,18 @@ void submenuInventario(SistemaTaller* s) {
 // ====================================================================
 //  4. main
 // ====================================================================
-
 int main() {
-  //  SistemaTaller sistema;el sistema vive en la pila; sus arreglos, en el heap
+    SistemaTaller sistema;                 // el sistema vive en la pila; sus arreglos, en el heap
+
+    Taller datosTaller;
+    memset(&datosTaller, 0, sizeof(datosTaller));
+    copiarTexto(datosTaller.nombre, "Autoservicio El Lago", sizeof(datosTaller.nombre));
+    copiarTexto(datosTaller.rif, "J-12345678-9", sizeof(datosTaller.rif));
+    copiarTexto(datosTaller.direccion, "Av. 5 de Julio, Maracaibo", sizeof(datosTaller.direccion));
+    copiarTexto(datosTaller.telefono, "0261-7000000", sizeof(datosTaller.telefono));
+
+    inicializarSistema(&sistema, datosTaller);
+    liberarSistema(&sistema);
     cout << "\nHasta pronto.\n";
     return 0;
 }
