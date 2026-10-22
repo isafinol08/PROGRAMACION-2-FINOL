@@ -1626,6 +1626,7 @@ void submenuInventario(SistemaTaller* s) {
 //  3.6 ORDENES DE SERVICIO (presentacion)
 // --------------------------------------------------------------------
 
+// Dibuja el detalle completo de una orden (formato de la seccion 9.1)
 void mostrarOrden(SistemaTaller* s, OrdenServicio* o) {
     Vehiculo* v = buscarVehiculoPorID(s, o->idVehiculo);
     Mecanico* m = buscarMecanicoPorID(s, o->idMecanico);
@@ -1935,9 +1936,11 @@ void submenuOrdenes(SistemaTaller* s) {
                               "7. Listar ordenes", "0. Volver al menu principal"};
     int op = -1;
     while (op != 0 && !entradaTerminada) {
+        limpiarPantalla();
         imprimirCajaMenu("ORDENES DE SERVICIO", nullptr, opciones, 8);
         op = pedirOpcion("Seleccione una opcion: ", 7);
         if (entradaTerminada) break;
+        if (op != 0) limpiarPantalla();
         switch (op) {
             case 1: menuAbrirOrden(s); break;
             case 2: menuAgregarRepuestoAOrden(s); break;
@@ -1947,6 +1950,7 @@ void submenuOrdenes(SistemaTaller* s) {
             case 6: menuVerDetalleOrden(s); break;
             case 7: menuListarOrdenes(s); break;
         }
+        if (op != 0) pausar();
     }
 }
 
@@ -1961,9 +1965,11 @@ void menuPrincipal(SistemaTaller* s) {
 
     bool salir = false;
     while (!salir && !entradaTerminada) {
+        limpiarPantalla();
         imprimirCajaMenu("SISTEMA DE GESTION DE TALLER", subtitulo, opciones, 5);
         int op = pedirOpcion("Seleccione una opcion: ", 4);
         if (entradaTerminada) break;
+        if (op != 0) limpiarPantalla();
         switch (op) {
             case 1: submenuVehiculos(s); break;
             case 2: submenuMecanicos(s); break;
@@ -1976,9 +1982,10 @@ void menuPrincipal(SistemaTaller* s) {
     }
 }
 
-// ====================================================================
+
+// ======================================================================
 //  4. main
-// ====================================================================
+// ======================================================================
 int main() {
     SistemaTaller sistema;                 // el sistema vive en la pila; sus arreglos, en el heap
 
@@ -1992,7 +1999,7 @@ int main() {
     inicializarSistema(&sistema, datosTaller);
     menuPrincipal(&sistema);
     liberarSistema(&sistema);
-    
+
     cout << "\nHasta pronto.\n";
     return 0;
 }
