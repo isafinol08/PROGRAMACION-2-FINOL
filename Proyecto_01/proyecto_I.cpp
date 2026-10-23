@@ -2,12 +2,6 @@
 //  PROYECTO 1 - SISTEMA DE GESTION DE TALLER MECANICO
 //  Programacion 2 - 2026-C
 //
-//  Todo el programa esta en UN SOLO archivo (sin archivos .h).
-//
-//  Compilar : g++ -std=c++11 -Wall -Wextra -o taller taller.cpp
-//  Ejecutar : ./taller
-//  Pruebas  : ./taller < pruebas/entrada.txt > pruebas/salida.txt
-//
 //  ORGANIZACION DEL ARCHIVO (de arriba hacia abajo):
 //    1. Estructuras de datos
 //    2. CAPA DE LOGICA        (sin cin / cout)
