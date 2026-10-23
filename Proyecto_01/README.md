@@ -1,13 +1,11 @@
 # Sistema de Gestión de Taller Mecánico
 
 **Programación 2 · Proyecto 1 · 2026-C**
-**Integrantes:** _[Nombre 1]_ y _[Nombre 2]_  (completar)
+**Integrantes:** Estefano Barboza Y Isabella Finol
 
 ## 1. Descripción del sistema
 
-Programa de consola en C++ para administrar un taller mecánico: **vehículos**, **mecánicos**, **inventario de repuestos** y **órdenes de servicio**. Todo se guarda en memoria dinámica (`new` / `delete`), sin `vector` ni otros contenedores de la STL. `std::string` se usa solamente para leer temporalmente lo que escribe el usuario.
-
-Todo el código está en un único archivo, `taller.cpp` (no hay archivos `.h`).
+Programa de consola en C++ para administrar un taller mecánico: **vehículos**, **mecánicos**, **inventario de repuestos** y **órdenes de servicio**. Todo se guarda en memoria dinámica (`new` / `delete`). El  `std::string` se usa solamente para leer temporalmente lo que escribe el usuario.
 
 ## 2. Compilación y ejecución
 
@@ -129,8 +127,7 @@ Porque el precio de un repuesto cambia con el tiempo, pero lo que se le cobró a
 Se **copia el puntero**, no el arreglo. En `redimensionarOrdenes`, la línea `nuevo[i] = s->ordenes[i];` copia todos los campos de la orden, incluido `detalles`, así que la orden nueva apunta exactamente al mismo bloque de memoria de detalles que tenía la vieja. Después, `delete[] s->ordenes` libera solo el arreglo viejo de órdenes: como `OrdenServicio` no tiene destructor, no toca los bloques de detalles. Resultado: los detalles no se pierden, no se duplican y hay un único dueño (la orden nueva). Es el motivo por el que `liberarSistema` debe hacer `delete[] ordenes[i].detalles` para cada orden antes de liberar el arreglo principal.
 
 ## 7. Pruebas
-
-La carpeta `pruebas/` contiene:
+el proyecto contiene:
 - `entrada.txt`: secuencia de entradas que recorre los 8 casos de uso (con comentarios `#` que indican cada caso y la preparación necesaria, como registrar mecánicos).
 - `salida.txt`: resultado de `./taller < pruebas/entrada.txt > pruebas/salida.txt`.
 
