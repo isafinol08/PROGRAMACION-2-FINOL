@@ -1,0 +1,2182 @@
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 1: Vehiculos y propietarios
+# ##############################################################
+Seleccione una opcion: 1
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: AB123CD
+Marca: Toyota
+Modelo: Corolla
+Anio (1950-2027): 2015
+Kilometraje: 44000
+Nombre del propietario: Maria Gonzalez
+Cedula del propietario: V-12345678
+Telefono del propietario: 0414-1111111
+
+Datos a guardar:
+  Vehiculo    : AB123CD - Toyota Corolla 2015
+  Kilometraje : 44000 km
+  Propietario : Maria Gonzalez  |  Cedula: V-12345678  |  Tel: 0414-1111111
+Guardar este vehiculo? (S/N): S
+Vehiculo 'AB123CD' registrado correctamente (ID 1).
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: XY987ZW
+Marca: Chevrolet
+Modelo: Aveo
+Anio (1950-2027): 2009
+Kilometraje: 128300
+Nombre del propietario: Maria Gonzalez
+Cedula del propietario: V-12345678
+Telefono del propietario: 0414-1111111
+
+Datos a guardar:
+  Vehiculo    : XY987ZW - Chevrolet Aveo 2009
+  Kilometraje : 128300 km
+  Propietario : Maria Gonzalez  |  Cedula: V-12345678  |  Tel: 0414-1111111
+Guardar este vehiculo? (S/N): S
+Vehiculo 'XY987ZW' registrado correctamente (ID 2).
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: LM456NP
+Marca: Ford
+Modelo: Fiesta
+Anio (1950-2027): 2012
+Kilometraje: 90000
+Nombre del propietario: Pedro Ramirez
+Cedula del propietario: V-9876543
+Telefono del propietario: 0424-2222222
+
+Datos a guardar:
+  Vehiculo    : LM456NP - Ford Fiesta 2012
+  Kilometraje : 90000 km
+  Propietario : Pedro Ramirez  |  Cedula: V-9876543  |  Tel: 0424-2222222
+Guardar este vehiculo? (S/N): S
+Vehiculo 'LM456NP' registrado correctamente (ID 3).
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+
+# Buscar por propietario parcial: "gonz" debe encontrar los dos de Maria
+Seleccione una opcion: 2
+
+--- BUSCAR VEHICULO ---
+1. Por placa exacta
+2. Por propietario (nombre parcial)
+3. Por ID
+0. Volver
+Seleccione una opcion: 2
+Nombre del propietario (o parte): gonz
++----+----------+----------------------+------+----------+--------------------+
+| ID | Placa    | Vehiculo             | Anio |       Km | Propietario        |
++----+----------+----------------------+------+----------+--------------------+
+|  1 | AB123CD  | Toyota Corolla       | 2015 |    44000 | Maria Gonzalez     |
+|  2 | XY987ZW  | Chevrolet Aveo       | 2009 |   128300 | Maria Gonzalez     |
++----+----------+----------------------+------+----------+--------------------+
+Total de vehiculos: 2
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+
+# Buscar por placa exacta
+Seleccione una opcion: 2
+
+--- BUSCAR VEHICULO ---
+1. Por placa exacta
+2. Por propietario (nombre parcial)
+3. Por ID
+0. Volver
+Seleccione una opcion: 1
+Placa: XY987ZW
+  Vehiculo    : XY987ZW - Chevrolet Aveo 2009  (ID 2)
+  Kilometraje : 128300 km
+  Propietario : Maria Gonzalez  |  Cedula: V-12345678  |  Tel: 0414-1111111
+  Registrado  : 2026-10-20
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+
+# Listar todos
+Seleccione una opcion: 5
+
+--- LISTA DE VEHICULOS ---
++----+----------+----------------------+------+----------+--------------------+
+| ID | Placa    | Vehiculo             | Anio |       Km | Propietario        |
++----+----------+----------------------+------+----------+--------------------+
+|  1 | AB123CD  | Toyota Corolla       | 2015 |    44000 | Maria Gonzalez     |
+|  2 | XY987ZW  | Chevrolet Aveo       | 2009 |   128300 | Maria Gonzalez     |
+|  3 | LM456NP  | Ford Fiesta          | 2012 |    90000 | Pedro Ramirez      |
++----+----------+----------------------+------+----------+--------------------+
+Total de vehiculos: 3
+(Capacidad interna del arreglo de vehiculos: 4)
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 2: Inventario
+# ##############################################################
+Seleccione una opcion: 3
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: FRN-001
+Nombre: Pastillas delanteras
+Marca: Brembo
+Precio unitario: 25.00
+Stock inicial: 10
+Stock minimo: 3
+
+Datos a guardar:
+  Repuesto     : FRN-001 - Pastillas delanteras  (ID 0)
+  Marca        : Brembo
+  Precio       : 25.00
+  Stock        : 10 (minimo 3)
+Guardar este repuesto? (S/N): S
+Repuesto 'FRN-001 - Pastillas delanteras' registrado correctamente (ID 1).
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: FRN-014
+Nombre: Liquido de frenos DOT4
+Marca: Bosch
+Precio unitario: 12.50
+Stock inicial: 5
+Stock minimo: 2
+
+Datos a guardar:
+  Repuesto     : FRN-014 - Liquido de frenos DOT4  (ID 0)
+  Marca        : Bosch
+  Precio       : 12.50
+  Stock        : 5 (minimo 2)
+Guardar este repuesto? (S/N): S
+Repuesto 'FRN-014 - Liquido de frenos DOT4' registrado correctamente (ID 2).
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+
+# (aqui se escribe texto donde se espera un numero: el programa vuelve a pedir el dato)
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: FIL-020
+Nombre: Filtro de aceite
+Marca: Mann
+Precio unitario: 8.00
+Stock inicial: abc
+ERROR: 'abc' no es un numero entero valido.
+Stock inicial: 6
+Stock minimo: 2
+
+Datos a guardar:
+  Repuesto     : FIL-020 - Filtro de aceite  (ID 0)
+  Marca        : Mann
+  Precio       : 8.00
+  Stock        : 6 (minimo 2)
+Guardar este repuesto? (S/N): S
+Repuesto 'FIL-020 - Filtro de aceite' registrado correctamente (ID 3).
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+
+# Este repuesto tiene stock IGUAL a su stock minimo (5 y 5)
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: BUJ-005
+Nombre: Bujia de iridio
+Marca: NGK
+Precio unitario: 4.50
+Stock inicial: 5
+Stock minimo: 5
+
+Datos a guardar:
+  Repuesto     : BUJ-005 - Bujia de iridio  (ID 0)
+  Marca        : NGK
+  Precio       : 4.50
+  Stock        : 5 (minimo 5)  ** BAJO STOCK **
+Guardar este repuesto? (S/N): S
+Repuesto 'BUJ-005 - Bujia de iridio' registrado correctamente (ID 4).
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+
+# Listar: BUJ-005 debe aparecer como BAJO STOCK
+Seleccione una opcion: 4
+
+--- INVENTARIO DE REPUESTOS ---
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+| ID | Codigo   | Nombre                     | Marca        |   Precio | Stock |   Min | Estado       |
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+|  1 | FRN-001  | Pastillas delanteras       | Brembo       |    25.00 |    10 |     3 | OK           |
+|  2 | FRN-014  | Liquido de frenos DOT4     | Bosch        |    12.50 |     5 |     2 | OK           |
+|  3 | FIL-020  | Filtro de aceite           | Mann         |     8.00 |     6 |     2 | OK           |
+|  4 | BUJ-005  | Bujia de iridio            | NGK          |     4.50 |     5 |     5 | BAJO STOCK   |
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+Total de repuestos: 4
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+
+# Entrada de mercancia para BUJ-005
+Seleccione una opcion: 3
+
+--- ENTRADA DE MERCANCIA (escriba CANCELAR para abortar) ---
+Codigo del repuesto: BUJ-005
+Stock actual de 'Bujia de iridio': 5
+Cantidad a ingresar: 10
+Registrar la entrada? (S/N): S
+Entrada registrada. Stock de 'Bujia de iridio': 15.
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+
+# Listar de nuevo: ya no debe aparecer como BAJO STOCK
+Seleccione una opcion: 4
+
+--- INVENTARIO DE REPUESTOS ---
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+| ID | Codigo   | Nombre                     | Marca        |   Precio | Stock |   Min | Estado       |
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+|  1 | FRN-001  | Pastillas delanteras       | Brembo       |    25.00 |    10 |     3 | OK           |
+|  2 | FRN-014  | Liquido de frenos DOT4     | Bosch        |    12.50 |     5 |     2 | OK           |
+|  3 | FIL-020  | Filtro de aceite           | Mann         |     8.00 |     6 |     2 | OK           |
+|  4 | BUJ-005  | Bujia de iridio            | NGK          |     4.50 |    15 |     5 | OK           |
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+Total de repuestos: 4
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# ##############################################################
+# PREPARACION: registrar mecanicos (el enunciado los necesita para las ordenes)
+# ##############################################################
+Seleccione una opcion: 2
+
+=============================================
+            GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico por ID
+3. Listar mecanicos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR MECANICO (escriba CANCELAR para abortar) ---
+Nombre completo: Jose Perez
+Cedula: V-11111111
+Especialidad (MOTOR/FRENOS/ELECTRICIDAD/SUSPENSION/GENERAL): frenos
+Fecha de ingreso (YYYY-MM-DD): 2024-03-15
+
+Datos a guardar: Jose Perez | Cedula V-11111111 | FRENOS | Ingreso 2024-03-15
+Guardar este mecanico? (S/N): S
+Mecanico 'Jose Perez' registrado correctamente (ID 1).
+
+=============================================
+            GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico por ID
+3. Listar mecanicos
+0. Volver al menu principal
+=============================================
+
+# Cedula repetida: rechazada y se vuelve a pedir
+Seleccione una opcion: 1
+
+--- REGISTRAR MECANICO (escriba CANCELAR para abortar) ---
+Nombre completo: Ana Rojas
+Cedula: V-11111111
+ERROR: La cedula 'V-11111111' ya pertenece al mecanico 'Jose Perez'.
+Cedula: V-22222222
+Especialidad (MOTOR/FRENOS/ELECTRICIDAD/SUSPENSION/GENERAL): PINTURA
+ERROR: La especialidad 'PINTURA' no es valida. Use MOTOR, FRENOS, ELECTRICIDAD, SUSPENSION o GENERAL.
+Especialidad (MOTOR/FRENOS/ELECTRICIDAD/SUSPENSION/GENERAL): MOTOR
+Fecha de ingreso (YYYY-MM-DD): 2025-02-30
+ERROR: La fecha '2025-02-30' no es valida. Use el formato YYYY-MM-DD.
+Fecha de ingreso (YYYY-MM-DD): 2025-02-28
+
+Datos a guardar: Ana Rojas | Cedula V-22222222 | MOTOR | Ingreso 2025-02-28
+Guardar este mecanico? (S/N): S
+Mecanico 'Ana Rojas' registrado correctamente (ID 2).
+
+=============================================
+            GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico por ID
+3. Listar mecanicos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 3
+
+--- LISTA DE MECANICOS ---
++----+--------------------------+--------------+----------------+------------+----------+
+| ID | Nombre                   | Cedula       | Especialidad   | Ingreso    | Abiertas |
++----+--------------------------+--------------+----------------+------------+----------+
+|  1 | Jose Perez               | V-11111111   | FRENOS         | 2024-03-15 |        0 |
+|  2 | Ana Rojas                | V-22222222   | MOTOR          | 2025-02-28 |        0 |
++----+--------------------------+--------------+----------------+------------+----------+
+Total de mecanicos: 2
+
+=============================================
+            GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico por ID
+3. Listar mecanicos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 3: Orden de servicio completa
+# ##############################################################
+Seleccione una opcion: 4
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+
+# 1) Abrir orden para AB123CD con kilometraje 45000 (mecanico Jose = ID 1)
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: AB123CD
+Vehiculo: AB123CD - Toyota Corolla (44000 km), propietario Maria Gonzalez
++----+--------------------------+--------------+----------------+------------+----------+
+| ID | Nombre                   | Cedula       | Especialidad   | Ingreso    | Abiertas |
++----+--------------------------+--------------+----------------+------------+----------+
+|  1 | Jose Perez               | V-11111111   | FRENOS         | 2024-03-15 |        0 |
+|  2 | Ana Rojas                | V-22222222   | MOTOR          | 2025-02-28 |        0 |
++----+--------------------------+--------------+----------------+------------+----------+
+Total de mecanicos: 2
+ID del mecanico: 1
+Kilometraje de ingreso: 45000
+Falla reportada: Ruido al frenar
+Se abrira una orden para 'AB123CD' con el mecanico Jose Perez (45000 km).
+Abrir esta orden? (S/N): S
+Orden #1 abierta para el vehiculo 'AB123CD' con el mecanico Jose Perez.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+
+# 2) Agregar 2 unidades del repuesto A (FRN-001) y 1 del repuesto B (FRN-014)
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Codigo del repuesto: FRN-001
+Cantidad: 2
+Se agregaron 2 unidad(es) de 'Pastillas delanteras' a la orden #1. Stock restante: 8.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Codigo del repuesto: FRN-014
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Liquido de frenos DOT4' a la orden #1. Stock restante: 4.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+
+# 3) Agregar 1 mas del repuesto A -> UNA linea de A con 3 unidades
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Codigo del repuesto: FRN-001
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Pastillas delanteras' a la orden #1. Stock restante: 7.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 6
+
+--- DETALLE DE ORDEN ---
+Numero de orden: 1
++----------------------------------------------------------------+
+| ORDEN DE SERVICIO #1                                           |
++----------------------------------------------------------------+
+| Estado   : ABIERTA  Apertura: 2026-10-20                       |
+| Cierre   : ---                                                 |
+| Vehiculo : AB123CD - Toyota Corolla 2015 (45000 km)            |
+| Dueno    : Maria Gonzalez                                      |
+| Mecanico : Jose Perez (FRENOS)                                 |
+| Falla    : Ruido al frenar                                     |
++----------+---------------------------+------+---------+--------+
+| Codigo   | Repuesto                  | Cant |  P.Unit |  Total |
++----------+---------------------------+------+---------+--------+
+| FRN-001  | Pastillas delanteras      |    3 |   25.00 |  75.00 |
+| FRN-014  | Liquido de frenos DOT4    |    1 |   12.50 |  12.50 |
++----------+---------------------------+------+---------+--------+
+| Repuestos                                             |  87.50 |
+| Mano de obra                                          |   0.00 |
+| TOTAL                                                 |  87.50 |
++-------------------------------------------------------+--------+
+(Lineas de detalle: 2 | capacidad del arreglo de detalles: 2)
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+
+# 4) Quitar el repuesto B -> su stock vuelve a 5
+Seleccione una opcion: 3
+
+--- QUITAR REPUESTO DE ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Codigo del repuesto a quitar: FRN-014
+Se quito 'Liquido de frenos DOT4' de la orden #1 (1 unidad(es) devueltas al inventario). Stock actual: 5.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+
+# 5) Cerrar la orden con mano de obra 40
+Seleccione una opcion: 4
+
+--- CERRAR ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Mano de obra: 40
+Cerrar esta orden? Ya no podra modificarse (S/N): S
+Orden #1 cerrada correctamente. Total: 115.00
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+
+# 6) Mostrar el detalle: total = 3*25.00 + 40.00 = 115.00
+Seleccione una opcion: 6
+
+--- DETALLE DE ORDEN ---
+Numero de orden: 1
++----------------------------------------------------------------+
+| ORDEN DE SERVICIO #1                                           |
++----------------------------------------------------------------+
+| Estado   : CERRADA  Apertura: 2026-10-20                       |
+| Cierre   : 2026-10-20                                          |
+| Vehiculo : AB123CD - Toyota Corolla 2015 (45000 km)            |
+| Dueno    : Maria Gonzalez                                      |
+| Mecanico : Jose Perez (FRENOS)                                 |
+| Falla    : Ruido al frenar                                     |
++----------+---------------------------+------+---------+--------+
+| Codigo   | Repuesto                  | Cant |  P.Unit |  Total |
++----------+---------------------------+------+---------+--------+
+| FRN-001  | Pastillas delanteras      |    3 |   25.00 |  75.00 |
++----------+---------------------------+------+---------+--------+
+| Repuestos                                             |  75.00 |
+| Mano de obra                                          |  40.00 |
+| TOTAL                                                 | 115.00 |
++-------------------------------------------------------+--------+
+(Lineas de detalle: 1 | capacidad del arreglo de detalles: 2)
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# Inventario despues de quitar B: FRN-001 = 7 y FRN-014 = 5
+Seleccione una opcion: 3
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- INVENTARIO DE REPUESTOS ---
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+| ID | Codigo   | Nombre                     | Marca        |   Precio | Stock |   Min | Estado       |
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+|  1 | FRN-001  | Pastillas delanteras       | Brembo       |    25.00 |     7 |     3 | OK           |
+|  2 | FRN-014  | Liquido de frenos DOT4     | Bosch        |    12.50 |     5 |     2 | OK           |
+|  3 | FIL-020  | Filtro de aceite           | Mann         |     8.00 |     6 |     2 | OK           |
+|  4 | BUJ-005  | Bujia de iridio            | NGK          |     4.50 |    15 |     5 | OK           |
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+Total de repuestos: 4
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 4: Precio historico
+# ##############################################################
+# 1) Cambiar el precio de A a 30.00 despues de cerrar la orden
+Seleccione una opcion: 3
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 5
+
+--- CAMBIAR PRECIO (escriba CANCELAR para abortar) ---
+Codigo del repuesto: FRN-001
+Precio actual de 'Pastillas delanteras': 25.00
+Nuevo precio: 30.00
+Actualizar el precio? (S/N): S
+Precio de 'Pastillas delanteras' actualizado a 30.00 (las ordenes ya registradas no cambian).
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# 2) El detalle de la orden #1 NO cambia (total 115.00)
+Seleccione una opcion: 4
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 6
+
+--- DETALLE DE ORDEN ---
+Numero de orden: 1
++----------------------------------------------------------------+
+| ORDEN DE SERVICIO #1                                           |
++----------------------------------------------------------------+
+| Estado   : CERRADA  Apertura: 2026-10-20                       |
+| Cierre   : 2026-10-20                                          |
+| Vehiculo : AB123CD - Toyota Corolla 2015 (45000 km)            |
+| Dueno    : Maria Gonzalez                                      |
+| Mecanico : Jose Perez (FRENOS)                                 |
+| Falla    : Ruido al frenar                                     |
++----------+---------------------------+------+---------+--------+
+| Codigo   | Repuesto                  | Cant |  P.Unit |  Total |
++----------+---------------------------+------+---------+--------+
+| FRN-001  | Pastillas delanteras      |    3 |   25.00 |  75.00 |
++----------+---------------------------+------+---------+--------+
+| Repuestos                                             |  75.00 |
+| Mano de obra                                          |  40.00 |
+| TOTAL                                                 | 115.00 |
++-------------------------------------------------------+--------+
+(Lineas de detalle: 1 | capacidad del arreglo de detalles: 2)
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+
+# 3) Orden nueva y agregar A -> usa el precio nuevo 30.00
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: AB123CD
+Vehiculo: AB123CD - Toyota Corolla (45000 km), propietario Maria Gonzalez
++----+--------------------------+--------------+----------------+------------+----------+
+| ID | Nombre                   | Cedula       | Especialidad   | Ingreso    | Abiertas |
++----+--------------------------+--------------+----------------+------------+----------+
+|  1 | Jose Perez               | V-11111111   | FRENOS         | 2024-03-15 |        0 |
+|  2 | Ana Rojas                | V-22222222   | MOTOR          | 2025-02-28 |        0 |
++----+--------------------------+--------------+----------------+------------+----------+
+Total de mecanicos: 2
+ID del mecanico: 1
+Kilometraje de ingreso: 45500
+Falla reportada: Cambio de pastillas
+Se abrira una orden para 'AB123CD' con el mecanico Jose Perez (45500 km).
+Abrir esta orden? (S/N): S
+Orden #2 abierta para el vehiculo 'AB123CD' con el mecanico Jose Perez.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: FRN-001
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Pastillas delanteras' a la orden #2. Stock restante: 6.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 6
+
+--- DETALLE DE ORDEN ---
+Numero de orden: 2
++----------------------------------------------------------------+
+| ORDEN DE SERVICIO #2                                           |
++----------------------------------------------------------------+
+| Estado   : ABIERTA  Apertura: 2026-10-20                       |
+| Cierre   : ---                                                 |
+| Vehiculo : AB123CD - Toyota Corolla 2015 (45500 km)            |
+| Dueno    : Maria Gonzalez                                      |
+| Mecanico : Jose Perez (FRENOS)                                 |
+| Falla    : Cambio de pastillas                                 |
++----------+---------------------------+------+---------+--------+
+| Codigo   | Repuesto                  | Cant |  P.Unit |  Total |
++----------+---------------------------+------+---------+--------+
+| FRN-001  | Pastillas delanteras      |    1 |   30.00 |  30.00 |
++----------+---------------------------+------+---------+--------+
+| Repuestos                                             |  30.00 |
+| Mano de obra                                          |   0.00 |
+| TOTAL                                                 |  30.00 |
++-------------------------------------------------------+--------+
+(Lineas de detalle: 1 | capacidad del arreglo de detalles: 2)
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 5: Anulacion con reversion de inventario
+# ##############################################################
+# Stock de FRN-001 antes de anular (debe ser 6)
+Seleccione una opcion: 3
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- INVENTARIO DE REPUESTOS ---
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+| ID | Codigo   | Nombre                     | Marca        |   Precio | Stock |   Min | Estado       |
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+|  1 | FRN-001  | Pastillas delanteras       | Brembo       |    30.00 |     6 |     3 | OK           |
+|  2 | FRN-014  | Liquido de frenos DOT4     | Bosch        |    12.50 |     5 |     2 | OK           |
+|  3 | FIL-020  | Filtro de aceite           | Mann         |     8.00 |     6 |     2 | OK           |
+|  4 | BUJ-005  | Bujia de iridio            | NGK          |     4.50 |    15 |     5 | OK           |
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+Total de repuestos: 4
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 5
+
+--- ANULAR ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+La orden #2 esta ABIERTA. Al anularla se devolveran 1 unidad(es) al inventario.
+Anular esta orden? (S/N): S
+Orden #2 anulada. Estado actual: ANULADA.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+
+# Verificar estado ANULADA
+Seleccione una opcion: 6
+
+--- DETALLE DE ORDEN ---
+Numero de orden: 2
++----------------------------------------------------------------+
+| ORDEN DE SERVICIO #2                                           |
++----------------------------------------------------------------+
+| Estado   : ANULADA  Apertura: 2026-10-20                       |
+| Cierre   : ---                                                 |
+| Vehiculo : AB123CD - Toyota Corolla 2015 (45500 km)            |
+| Dueno    : Maria Gonzalez                                      |
+| Mecanico : Jose Perez (FRENOS)                                 |
+| Falla    : Cambio de pastillas                                 |
++----------+---------------------------+------+---------+--------+
+| Codigo   | Repuesto                  | Cant |  P.Unit |  Total |
++----------+---------------------------+------+---------+--------+
+| FRN-001  | Pastillas delanteras      |    1 |   30.00 |  30.00 |
++----------+---------------------------+------+---------+--------+
+| Repuestos                                             |  30.00 |
+| Mano de obra                                          |   0.00 |
+| TOTAL                                                 |  30.00 |
++-------------------------------------------------------+--------+
+(Lineas de detalle: 1 | capacidad del arreglo de detalles: 2)
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# Stock de FRN-001 despues de anular (debe volver a 7)
+Seleccione una opcion: 3
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- INVENTARIO DE REPUESTOS ---
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+| ID | Codigo   | Nombre                     | Marca        |   Precio | Stock |   Min | Estado       |
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+|  1 | FRN-001  | Pastillas delanteras       | Brembo       |    30.00 |     7 |     3 | OK           |
+|  2 | FRN-014  | Liquido de frenos DOT4     | Bosch        |    12.50 |     5 |     2 | OK           |
+|  3 | FIL-020  | Filtro de aceite           | Mann         |     8.00 |     6 |     2 | OK           |
+|  4 | BUJ-005  | Bujia de iridio            | NGK          |     4.50 |    15 |     5 | OK           |
++----+----------+----------------------------+--------------+----------+-------+-------+--------------+
+Total de repuestos: 4
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 6: Validaciones de negocio
+# ##############################################################
+# 6.1 Placa ya existente -> rechazada
+Seleccione una opcion: 1
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: AB123CD
+ERROR: La placa 'AB123CD' ya esta registrada.
+Placa: CANCELAR
+Registro cancelado. No se creo ningun vehiculo.
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+
+# (preparacion) vehiculo extra para probar el limite de mecanico y el kilometraje
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: KL789QR
+Marca: Renault
+Modelo: Logan
+Anio (1950-2027): 2018
+Kilometraje: 60000
+Nombre del propietario: Carlos Mendoza
+Cedula del propietario: V-15555555
+Telefono del propietario: 0412-3333333
+
+Datos a guardar:
+  Vehiculo    : KL789QR - Renault Logan 2018
+  Kilometraje : 60000 km
+  Propietario : Carlos Mendoza  |  Cedula: V-15555555  |  Tel: 0412-3333333
+Guardar este vehiculo? (S/N): S
+Vehiculo 'KL789QR' registrado correctamente (ID 4).
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# (preparacion) Jose abre 3 ordenes a la vez: #3, #4 y #5
+Seleccione una opcion: 4
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: AB123CD
+Vehiculo: AB123CD - Toyota Corolla (45500 km), propietario Maria Gonzalez
++----+--------------------------+--------------+----------------+------------+----------+
+| ID | Nombre                   | Cedula       | Especialidad   | Ingreso    | Abiertas |
++----+--------------------------+--------------+----------------+------------+----------+
+|  1 | Jose Perez               | V-11111111   | FRENOS         | 2024-03-15 |        0 |
+|  2 | Ana Rojas                | V-22222222   | MOTOR          | 2025-02-28 |        0 |
++----+--------------------------+--------------+----------------+------------+----------+
+Total de mecanicos: 2
+ID del mecanico: 1
+Kilometraje de ingreso: 46000
+Falla reportada: Falla de arranque
+Se abrira una orden para 'AB123CD' con el mecanico Jose Perez (46000 km).
+Abrir esta orden? (S/N): S
+Orden #3 abierta para el vehiculo 'AB123CD' con el mecanico Jose Perez.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: XY987ZW
+Vehiculo: XY987ZW - Chevrolet Aveo (128300 km), propietario Maria Gonzalez
++----+--------------------------+--------------+----------------+------------+----------+
+| ID | Nombre                   | Cedula       | Especialidad   | Ingreso    | Abiertas |
++----+--------------------------+--------------+----------------+------------+----------+
+|  1 | Jose Perez               | V-11111111   | FRENOS         | 2024-03-15 |        1 |
+|  2 | Ana Rojas                | V-22222222   | MOTOR          | 2025-02-28 |        0 |
++----+--------------------------+--------------+----------------+------------+----------+
+Total de mecanicos: 2
+ID del mecanico: 1
+Kilometraje de ingreso: 128300
+Falla reportada: Recalentamiento del motor
+Se abrira una orden para 'XY987ZW' con el mecanico Jose Perez (128300 km).
+Abrir esta orden? (S/N): S
+Orden #4 abierta para el vehiculo 'XY987ZW' con el mecanico Jose Perez.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: LM456NP
+Vehiculo: LM456NP - Ford Fiesta (90000 km), propietario Pedro Ramirez
++----+--------------------------+--------------+----------------+------------+----------+
+| ID | Nombre                   | Cedula       | Especialidad   | Ingreso    | Abiertas |
++----+--------------------------+--------------+----------------+------------+----------+
+|  1 | Jose Perez               | V-11111111   | FRENOS         | 2024-03-15 |        2 |
+|  2 | Ana Rojas                | V-22222222   | MOTOR          | 2025-02-28 |        0 |
++----+--------------------------+--------------+----------------+------------+----------+
+Total de mecanicos: 2
+ID del mecanico: 1
+Kilometraje de ingreso: 90000
+Falla reportada: Vibracion en la direccion
+Se abrira una orden para 'LM456NP' con el mecanico Jose Perez (90000 km).
+Abrir esta orden? (S/N): S
+Orden #5 abierta para el vehiculo 'LM456NP' con el mecanico Jose Perez.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+
+# 6.3 Cuarta orden ABIERTA para Jose -> rechazada
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: KL789QR
+Vehiculo: KL789QR - Renault Logan (60000 km), propietario Carlos Mendoza
++----+--------------------------+--------------+----------------+------------+----------+
+| ID | Nombre                   | Cedula       | Especialidad   | Ingreso    | Abiertas |
++----+--------------------------+--------------+----------------+------------+----------+
+|  1 | Jose Perez               | V-11111111   | FRENOS         | 2024-03-15 |        3 |
+|  2 | Ana Rojas                | V-22222222   | MOTOR          | 2025-02-28 |        0 |
++----+--------------------------+--------------+----------------+------------+----------+
+Total de mecanicos: 2
+ID del mecanico: 1
+Kilometraje de ingreso: 60000
+Falla reportada: Revision general
+Se abrira una orden para 'KL789QR' con el mecanico Jose Perez (60000 km).
+Abrir esta orden? (S/N): S
+ERROR: El mecanico 'Jose Perez' ya tiene 3 ordenes abiertas.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+
+# 6.2 Segunda orden para un vehiculo con orden ABIERTA -> rechazada
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: AB123CD
+Vehiculo: AB123CD - Toyota Corolla (46000 km), propietario Maria Gonzalez
++----+--------------------------+--------------+----------------+------------+----------+
+| ID | Nombre                   | Cedula       | Especialidad   | Ingreso    | Abiertas |
++----+--------------------------+--------------+----------------+------------+----------+
+|  1 | Jose Perez               | V-11111111   | FRENOS         | 2024-03-15 |        3 |
+|  2 | Ana Rojas                | V-22222222   | MOTOR          | 2025-02-28 |        0 |
++----+--------------------------+--------------+----------------+------------+----------+
+Total de mecanicos: 2
+ID del mecanico: 2
+Kilometraje de ingreso: 46000
+Falla reportada: Otra falla
+Se abrira una orden para 'AB123CD' con el mecanico Ana Rojas (46000 km).
+Abrir esta orden? (S/N): S
+ERROR: El vehiculo 'AB123CD' ya tiene la orden #3 ABIERTA.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+
+# 6.4 Kilometraje menor al registrado (60000) -> rechazado
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: KL789QR
+Vehiculo: KL789QR - Renault Logan (60000 km), propietario Carlos Mendoza
++----+--------------------------+--------------+----------------+------------+----------+
+| ID | Nombre                   | Cedula       | Especialidad   | Ingreso    | Abiertas |
++----+--------------------------+--------------+----------------+------------+----------+
+|  1 | Jose Perez               | V-11111111   | FRENOS         | 2024-03-15 |        3 |
+|  2 | Ana Rojas                | V-22222222   | MOTOR          | 2025-02-28 |        0 |
++----+--------------------------+--------------+----------------+------------+----------+
+Total de mecanicos: 2
+ID del mecanico: 2
+Kilometraje de ingreso: 50000
+Falla reportada: Revision general
+Se abrira una orden para 'KL789QR' con el mecanico Ana Rojas (50000 km).
+Abrir esta orden? (S/N): S
+ERROR: El kilometraje 50000 es menor al ultimo registrado del vehiculo 'KL789QR' (60000 km).
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+
+# 6.5 Mas unidades que el stock (se prueba tambien texto en lugar de numero)
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 3
+Codigo del repuesto: FIL-020
+Cantidad: abc
+ERROR: 'abc' no es un numero entero valido.
+Cantidad: 99
+ERROR: Stock insuficiente de 'Filtro de aceite'. Disponible: 6, solicitado: 99.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+
+# 6.6 Modificar una orden CERRADA -> rechazado
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Codigo del repuesto: FIL-020
+Cantidad: 1
+ERROR: La orden #1 esta CERRADA y no puede modificarse.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 3
+
+--- QUITAR REPUESTO DE ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Codigo del repuesto a quitar: FRN-001
+ERROR: La orden #1 esta CERRADA y no puede modificarse.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# 6.7 Eliminar un vehiculo con ordenes -> rechazado
+Seleccione una opcion: 1
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- ELIMINAR VEHICULO ---
+Placa del vehiculo a eliminar: AB123CD
+ERROR: El vehiculo 'AB123CD' tiene 3 ordenes registradas y no puede eliminarse.
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# 6.8 Eliminar un repuesto usado en alguna orden -> rechazado
+Seleccione una opcion: 3
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 6
+
+--- ELIMINAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo del repuesto: FRN-001
+ERROR: El repuesto 'Pastillas delanteras' aparece en ordenes de servicio y no puede eliminarse.
+
+=============================================
+           INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Registrar entrada de mercancia
+4. Listar repuestos
+5. Cambiar precio
+6. Eliminar repuesto
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 7: Redimensionamiento
+# ##############################################################
+# 7.1 Registrar 5 vehiculos mas (el arreglo tenia capacidad 4: se redimensiona)
+Seleccione una opcion: 1
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: PQ111AA
+Marca: Honda
+Modelo: Civic
+Anio (1950-2027): 1900
+ERROR: El valor debe estar entre 1950 y 2027.
+Anio (1950-2027): 2005
+Kilometraje: 150000
+Nombre del propietario: Luis Perez
+Cedula del propietario: V-1000001
+Telefono del propietario: 0414-0000001
+
+Datos a guardar:
+  Vehiculo    : PQ111AA - Honda Civic 2005
+  Kilometraje : 150000 km
+  Propietario : Luis Perez  |  Cedula: V-1000001  |  Tel: 0414-0000001
+Guardar este vehiculo? (S/N): S
+Vehiculo 'PQ111AA' registrado correctamente (ID 5).
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: PQ222BB
+Marca: Mazda
+Modelo: Tres
+Anio (1950-2027): 2019
+Kilometraje: 30000
+Nombre del propietario: Ana Salas
+Cedula del propietario: V-1000002
+Telefono del propietario: 0414-0000002
+
+Datos a guardar:
+  Vehiculo    : PQ222BB - Mazda Tres 2019
+  Kilometraje : 30000 km
+  Propietario : Ana Salas  |  Cedula: V-1000002  |  Tel: 0414-0000002
+Guardar este vehiculo? (S/N): S
+Vehiculo 'PQ222BB' registrado correctamente (ID 6).
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: PQ333CC
+Marca: Kia
+Modelo: Rio
+Anio (1950-2027): 2020
+Kilometraje: 20000
+Nombre del propietario: Jorge Diaz
+Cedula del propietario: E-1000003
+Telefono del propietario: 0414-0000003
+
+Datos a guardar:
+  Vehiculo    : PQ333CC - Kia Rio 2020
+  Kilometraje : 20000 km
+  Propietario : Jorge Diaz  |  Cedula: E-1000003  |  Tel: 0414-0000003
+Guardar este vehiculo? (S/N): S
+Vehiculo 'PQ333CC' registrado correctamente (ID 7).
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: PQ444DD
+Marca: Hyundai
+Modelo: Accent
+Anio (1950-2027): 2017
+Kilometraje: 70000
+Nombre del propietario: Rosa Pinto
+Cedula del propietario: V-1000004
+Telefono del propietario: 0414-0000004
+
+Datos a guardar:
+  Vehiculo    : PQ444DD - Hyundai Accent 2017
+  Kilometraje : 70000 km
+  Propietario : Rosa Pinto  |  Cedula: V-1000004  |  Tel: 0414-0000004
+Guardar este vehiculo? (S/N): S
+Vehiculo 'PQ444DD' registrado correctamente (ID 8).
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: PQ555EE
+Marca: Nissan
+Modelo: Sentra
+Anio (1950-2027): 2014
+Kilometraje: 110000
+Nombre del propietario: Mario Soto
+Cedula del propietario: J-1000005
+Telefono del propietario: 0414-0000005
+
+Datos a guardar:
+  Vehiculo    : PQ555EE - Nissan Sentra 2014
+  Kilometraje : 110000 km
+  Propietario : Mario Soto  |  Cedula: J-1000005  |  Tel: 0414-0000005
+Guardar este vehiculo? (S/N): S
+Vehiculo 'PQ555EE' registrado correctamente (ID 9).
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+
+# 7.2 Todos siguen accesibles con sus datos correctos
+Seleccione una opcion: 5
+
+--- LISTA DE VEHICULOS ---
++----+----------+----------------------+------+----------+--------------------+
+| ID | Placa    | Vehiculo             | Anio |       Km | Propietario        |
++----+----------+----------------------+------+----------+--------------------+
+|  1 | AB123CD  | Toyota Corolla       | 2015 |    46000 | Maria Gonzalez     |
+|  2 | XY987ZW  | Chevrolet Aveo       | 2009 |   128300 | Maria Gonzalez     |
+|  3 | LM456NP  | Ford Fiesta          | 2012 |    90000 | Pedro Ramirez      |
+|  4 | KL789QR  | Renault Logan        | 2018 |    60000 | Carlos Mendoza     |
+|  5 | PQ111AA  | Honda Civic          | 2005 |   150000 | Luis Perez         |
+|  6 | PQ222BB  | Mazda Tres           | 2019 |    30000 | Ana Salas          |
+|  7 | PQ333CC  | Kia Rio              | 2020 |    20000 | Jorge Diaz         |
+|  8 | PQ444DD  | Hyundai Accent       | 2017 |    70000 | Rosa Pinto         |
+|  9 | PQ555EE  | Nissan Sentra        | 2014 |   110000 | Mario Soto         |
++----+----------+----------------------+------+----------+--------------------+
+Total de vehiculos: 9
+(Capacidad interna del arreglo de vehiculos: 16)
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- BUSCAR VEHICULO ---
+1. Por placa exacta
+2. Por propietario (nombre parcial)
+3. Por ID
+0. Volver
+Seleccione una opcion: 2
+Nombre del propietario (o parte): soto
++----+----------+----------------------+------+----------+--------------------+
+| ID | Placa    | Vehiculo             | Anio |       Km | Propietario        |
++----+----------+----------------------+------+----------+--------------------+
+|  9 | PQ555EE  | Nissan Sentra        | 2014 |   110000 | Mario Soto         |
++----+----------+----------------------+------+----------+--------------------+
+Total de vehiculos: 1
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# 7.3 Tres repuestos distintos en la orden #3 (capacidad de detalles 2 -> se redimensiona)
+Seleccione una opcion: 4
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 3
+Codigo del repuesto: FRN-001
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Pastillas delanteras' a la orden #3. Stock restante: 6.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 3
+Codigo del repuesto: FIL-020
+Cantidad: 2
+Se agregaron 2 unidad(es) de 'Filtro de aceite' a la orden #3. Stock restante: 4.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 3
+Codigo del repuesto: BUJ-005
+Cantidad: 4
+Se agregaron 4 unidad(es) de 'Bujia de iridio' a la orden #3. Stock restante: 11.
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+
+# 7.4 Las 3 lineas y el total son correctos: 30.00 + 16.00 + 18.00 = 64.00
+Seleccione una opcion: 6
+
+--- DETALLE DE ORDEN ---
+Numero de orden: 3
++----------------------------------------------------------------+
+| ORDEN DE SERVICIO #3                                           |
++----------------------------------------------------------------+
+| Estado   : ABIERTA  Apertura: 2026-10-20                       |
+| Cierre   : ---                                                 |
+| Vehiculo : AB123CD - Toyota Corolla 2015 (46000 km)            |
+| Dueno    : Maria Gonzalez                                      |
+| Mecanico : Jose Perez (FRENOS)                                 |
+| Falla    : Falla de arranque                                   |
++----------+---------------------------+------+---------+--------+
+| Codigo   | Repuesto                  | Cant |  P.Unit |  Total |
++----------+---------------------------+------+---------+--------+
+| FRN-001  | Pastillas delanteras      |    1 |   30.00 |  30.00 |
+| FIL-020  | Filtro de aceite          |    2 |    8.00 |  16.00 |
+| BUJ-005  | Bujia de iridio           |    4 |    4.50 |  18.00 |
++----------+---------------------------+------+---------+--------+
+| Repuestos                                             |  64.00 |
+| Mano de obra                                          |   0.00 |
+| TOTAL                                                 |  64.00 |
++-------------------------------------------------------+--------+
+(Lineas de detalle: 3 | capacidad del arreglo de detalles: 4)
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 7
+
+--- LISTAR ORDENES ---
+1. Todas
+2. Abiertas
+3. Cerradas
+4. Anuladas
+5. Historial de un vehiculo
+0. Volver
+Seleccione una opcion: 1
++--------+----------+--------------------------------+----------------------+------------+----------+
+|  Orden | Estado   | Vehiculo                       | Mecanico             | Apertura   |    Total |
++--------+----------+--------------------------------+----------------------+------------+----------+
+|     #1 | CERRADA  | AB123CD - Toyota Corolla       | Jose Perez           | 2026-10-20 |   115.00 |
+|     #2 | ANULADA  | AB123CD - Toyota Corolla       | Jose Perez           | 2026-10-20 |    30.00 |
+|     #3 | ABIERTA  | AB123CD - Toyota Corolla       | Jose Perez           | 2026-10-20 |    64.00 |
+|     #4 | ABIERTA  | XY987ZW - Chevrolet Aveo       | Jose Perez           | 2026-10-20 |     0.00 |
+|     #5 | ABIERTA  | LM456NP - Ford Fiesta          | Jose Perez           | 2026-10-20 |     0.00 |
++--------+----------+--------------------------------+----------------------+------------+----------+
+Total de ordenes: 5
+
+=============================================
+             ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 8: Cancelacion durante el registro
+# ##############################################################
+Seleccione una opcion: 1
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: ZZ111AA
+Marca: Kia
+Modelo: Rio
+Anio (1950-2027): CANCELAR
+Registro cancelado. No se creo ningun vehiculo.
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+
+# Verificar que el vehiculo NO fue creado (siguen 9 vehiculos)
+Seleccione una opcion: 5
+
+--- LISTA DE VEHICULOS ---
++----+----------+----------------------+------+----------+--------------------+
+| ID | Placa    | Vehiculo             | Anio |       Km | Propietario        |
++----+----------+----------------------+------+----------+--------------------+
+|  1 | AB123CD  | Toyota Corolla       | 2015 |    46000 | Maria Gonzalez     |
+|  2 | XY987ZW  | Chevrolet Aveo       | 2009 |   128300 | Maria Gonzalez     |
+|  3 | LM456NP  | Ford Fiesta          | 2012 |    90000 | Pedro Ramirez      |
+|  4 | KL789QR  | Renault Logan        | 2018 |    60000 | Carlos Mendoza     |
+|  5 | PQ111AA  | Honda Civic          | 2005 |   150000 | Luis Perez         |
+|  6 | PQ222BB  | Mazda Tres           | 2019 |    30000 | Ana Salas          |
+|  7 | PQ333CC  | Kia Rio              | 2020 |    20000 | Jorge Diaz         |
+|  8 | PQ444DD  | Hyundai Accent       | 2017 |    70000 | Rosa Pinto         |
+|  9 | PQ555EE  | Nissan Sentra        | 2014 |   110000 | Mario Soto         |
++----+----------+----------------------+------+----------+--------------------+
+Total de vehiculos: 9
+(Capacidad interna del arreglo de vehiculos: 16)
+
+=============================================
+            GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# Estado final de los mecanicos (Jose tiene 3 ordenes abiertas)
+Seleccione una opcion: 2
+
+=============================================
+            GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico por ID
+3. Listar mecanicos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 3
+
+--- LISTA DE MECANICOS ---
++----+--------------------------+--------------+----------------+------------+----------+
+| ID | Nombre                   | Cedula       | Especialidad   | Ingreso    | Abiertas |
++----+--------------------------+--------------+----------------+------------+----------+
+|  1 | Jose Perez               | V-11111111   | FRENOS         | 2024-03-15 |        3 |
+|  2 | Ana Rojas                | V-22222222   | MOTOR          | 2025-02-28 |        0 |
++----+--------------------------+--------------+----------------+------------+----------+
+Total de mecanicos: 2
+
+=============================================
+            GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico por ID
+3. Listar mecanicos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+        SISTEMA DE GESTION DE TALLER
+        Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+0. Salir
+=============================================
+
+# Salir del programa
+Seleccione una opcion: 0
+Seguro que desea salir? Los datos en memoria se perderan (S/N): S
+
+Hasta pronto.
