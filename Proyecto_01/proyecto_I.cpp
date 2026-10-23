@@ -1,14 +1,3 @@
-// ====================================================================
-//  PROYECTO 1 - SISTEMA DE GESTION DE TALLER MECANICO
-//  Programacion 2 - 2026-C
-//
-//  ORGANIZACION DEL ARCHIVO (de arriba hacia abajo):
-//    1. Estructuras de datos
-//    2. CAPA DE LOGICA        (sin cin / cout)
-//    3. CAPA DE PRESENTACION  (cin / cout / menus)
-//    4. main
-// ====================================================================
-
 #include <iostream>
 #include <cstring>
 #include <cstdio>
