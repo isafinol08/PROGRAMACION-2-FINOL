@@ -1,0 +1,394 @@
+# ##############################################################
+# CASO DE USO 1: Vehiculos y propietarios
+# ##############################################################
+1
+1
+AB123CD
+Toyota
+Corolla
+2015
+44000
+Maria Gonzalez
+V-12345678
+0414-1111111
+S
+1
+XY987ZW
+Chevrolet
+Aveo
+2009
+128300
+Maria Gonzalez
+V-12345678
+0414-1111111
+S
+1
+LM456NP
+Ford
+Fiesta
+2012
+90000
+Pedro Ramirez
+V-9876543
+0424-2222222
+S
+# Buscar por propietario parcial: "gonz" debe encontrar los dos de Maria
+2
+2
+gonz
+# Buscar por placa exacta
+2
+1
+XY987ZW
+# Listar todos
+5
+0
+# ##############################################################
+# CASO DE USO 2: Inventario
+# ##############################################################
+3
+1
+FRN-001
+Pastillas delanteras
+Brembo
+25.00
+10
+3
+S
+1
+FRN-014
+Liquido de frenos DOT4
+Bosch
+12.50
+5
+2
+S
+# (aqui se escribe texto donde se espera un numero: el programa vuelve a pedir el dato)
+1
+FIL-020
+Filtro de aceite
+Mann
+8.00
+abc
+6
+2
+S
+# Este repuesto tiene stock IGUAL a su stock minimo (5 y 5)
+1
+BUJ-005
+Bujia de iridio
+NGK
+4.50
+5
+5
+S
+# Listar: BUJ-005 debe aparecer como BAJO STOCK
+4
+# Entrada de mercancia para BUJ-005
+3
+BUJ-005
+10
+S
+# Listar de nuevo: ya no debe aparecer como BAJO STOCK
+4
+0
+# ##############################################################
+# PREPARACION: registrar mecanicos (el enunciado los necesita para las ordenes)
+# ##############################################################
+2
+1
+Jose Perez
+V-11111111
+frenos
+2024-03-15
+S
+# Cedula repetida: rechazada y se vuelve a pedir
+1
+Ana Rojas
+V-11111111
+V-22222222
+PINTURA
+MOTOR
+2025-02-30
+2025-02-28
+S
+3
+0
+# ##############################################################
+# CASO DE USO 3: Orden de servicio completa
+# ##############################################################
+4
+# 1) Abrir orden para AB123CD con kilometraje 45000 (mecanico Jose = ID 1)
+1
+AB123CD
+1
+45000
+Ruido al frenar
+S
+# 2) Agregar 2 unidades del repuesto A (FRN-001) y 1 del repuesto B (FRN-014)
+2
+1
+FRN-001
+2
+2
+1
+FRN-014
+1
+# 3) Agregar 1 mas del repuesto A -> UNA linea de A con 3 unidades
+2
+1
+FRN-001
+1
+6
+1
+# 4) Quitar el repuesto B -> su stock vuelve a 5
+3
+1
+FRN-014
+# 5) Cerrar la orden con mano de obra 40
+4
+1
+40
+S
+# 6) Mostrar el detalle: total = 3*25.00 + 40.00 = 115.00
+6
+1
+0
+# Inventario despues de quitar B: FRN-001 = 7 y FRN-014 = 5
+3
+4
+0
+# ##############################################################
+# CASO DE USO 4: Precio historico
+# ##############################################################
+# 1) Cambiar el precio de A a 30.00 despues de cerrar la orden
+3
+5
+FRN-001
+30.00
+S
+0
+# 2) El detalle de la orden #1 NO cambia (total 115.00)
+4
+6
+1
+# 3) Orden nueva y agregar A -> usa el precio nuevo 30.00
+1
+AB123CD
+1
+45500
+Cambio de pastillas
+S
+2
+2
+FRN-001
+1
+6
+2
+0
+# ##############################################################
+# CASO DE USO 5: Anulacion con reversion de inventario
+# ##############################################################
+# Stock de FRN-001 antes de anular (debe ser 6)
+3
+4
+0
+4
+5
+2
+S
+# Verificar estado ANULADA
+6
+2
+0
+# Stock de FRN-001 despues de anular (debe volver a 7)
+3
+4
+0
+# ##############################################################
+# CASO DE USO 6: Validaciones de negocio
+# ##############################################################
+# 6.1 Placa ya existente -> rechazada
+1
+1
+AB123CD
+CANCELAR
+# (preparacion) vehiculo extra para probar el limite de mecanico y el kilometraje
+1
+KL789QR
+Renault
+Logan
+2018
+60000
+Carlos Mendoza
+V-15555555
+0412-3333333
+S
+0
+# (preparacion) Jose abre 3 ordenes a la vez: #3, #4 y #5
+4
+1
+AB123CD
+1
+46000
+Falla de arranque
+S
+1
+XY987ZW
+1
+128300
+Recalentamiento del motor
+S
+1
+LM456NP
+1
+90000
+Vibracion en la direccion
+S
+# 6.3 Cuarta orden ABIERTA para Jose -> rechazada
+1
+KL789QR
+1
+60000
+Revision general
+S
+# 6.2 Segunda orden para un vehiculo con orden ABIERTA -> rechazada
+1
+AB123CD
+2
+46000
+Otra falla
+S
+# 6.4 Kilometraje menor al registrado (60000) -> rechazado
+1
+KL789QR
+2
+50000
+Revision general
+S
+# 6.5 Mas unidades que el stock (se prueba tambien texto en lugar de numero)
+2
+3
+FIL-020
+abc
+99
+# 6.6 Modificar una orden CERRADA -> rechazado
+2
+1
+FIL-020
+1
+3
+1
+FRN-001
+0
+# 6.7 Eliminar un vehiculo con ordenes -> rechazado
+1
+4
+AB123CD
+0
+# 6.8 Eliminar un repuesto usado en alguna orden -> rechazado
+3
+6
+FRN-001
+0
+# ##############################################################
+# CASO DE USO 7: Redimensionamiento
+# ##############################################################
+# 7.1 Registrar 5 vehiculos mas (el arreglo tenia capacidad 4: se redimensiona)
+1
+1
+PQ111AA
+Honda
+Civic
+1900
+2005
+150000
+Luis Perez
+V-1000001
+0414-0000001
+S
+1
+PQ222BB
+Mazda
+Tres
+2019
+30000
+Ana Salas
+V-1000002
+0414-0000002
+S
+1
+PQ333CC
+Kia
+Rio
+2020
+20000
+Jorge Diaz
+E-1000003
+0414-0000003
+S
+1
+PQ444DD
+Hyundai
+Accent
+2017
+70000
+Rosa Pinto
+V-1000004
+0414-0000004
+S
+1
+PQ555EE
+Nissan
+Sentra
+2014
+110000
+Mario Soto
+J-1000005
+0414-0000005
+S
+# 7.2 Todos siguen accesibles con sus datos correctos
+5
+2
+2
+soto
+0
+# 7.3 Tres repuestos distintos en la orden #3 (capacidad de detalles 2 -> se redimensiona)
+4
+2
+3
+FRN-001
+1
+2
+3
+FIL-020
+2
+2
+3
+BUJ-005
+4
+# 7.4 Las 3 lineas y el total son correctos: 30.00 + 16.00 + 18.00 = 64.00
+6
+3
+7
+1
+0
+# ##############################################################
+# CASO DE USO 8: Cancelacion durante el registro
+# ##############################################################
+1
+1
+ZZ111AA
+Kia
+Rio
+CANCELAR
+# Verificar que el vehiculo NO fue creado (siguen 9 vehiculos)
+5
+0
+# Estado final de los mecanicos (Jose tiene 3 ordenes abiertas)
+2
+3
+0
+# Salir del programa
+0
+S
