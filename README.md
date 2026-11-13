@@ -18,8 +18,9 @@ A continuación se detalla la estructura y descripción de cada proyecto o prác
 
 | Proyecto / Práctica | Descripción / Temática | Enlace / Carpeta |
 | :--- | :--- | :---: |
-| **Práctica 01** | En desarrollo |
-| **Pokedex**     | En desarrollo |
+| **Práctica 01** | Terminada  |
+| **Práctica 02** | En desarrollo |
+| **Pokedex**     | Terminada  |
 
 ---
 
@@ -32,4 +33,5 @@ El proyecto mantiene la siguiente organización de carpetas:
  ┣ 📂 Extra
  ┣ 📂 Practicas_extra
  ┣ 📂 Proyecto_01
+ ┣ 📂 Proyecto_02
  ┗ 📜 README.md          
