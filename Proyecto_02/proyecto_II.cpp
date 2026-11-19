@@ -3066,8 +3066,252 @@ void submenuOrdenes() {
     }
 }
 
-int main () {
-    
-    cout << "El programa funciona correctamente." << endl;
+// --------------------------------------------------------------------
+//  4.8 REPORTES (presentacion)
+// --------------------------------------------------------------------
+void menuReporteHistorialVehiculo() {
+    char placa[10];
+    cout << "\n--- REPORTE 1: HISTORIAL DE VEHICULO (escriba CANCELAR para abortar) ---\n";
+    if (!verificarHay(contarVehiculosActivos(), "No hay vehiculos registrados.",
+                      "Primero registre uno en Gestion de Vehiculos.")) return;
+    if (!pedirDato("Placa del vehiculo: ", placa, sizeof(placa), DATO_PLACA)) { cout << "Operacion cancelada.\n"; return; }
+    Vehiculo v;
+    Resultado r = obtenerVehiculoPorPlaca(placa, &v);
+    if (r == RES_VEHICULO_NO_EXISTE) { cout << "ERROR: No existe un vehiculo con la placa '" << placa << "'.\n"; return; }
+    if (r != RES_OK) { cout << "ERROR: " << textoResultado(r) << "\n"; return; }
+
+    cout << "\n";
+    mostrarVehiculo(v);
+    cout << "\nOrdenes del vehiculo:\n";
+    mostrarOrdenesPaginadas(nullptr, v.id);
+    float total;
+    r = calcularFacturacionVehiculo(v.id, &total);
+    if (r == RES_OK) printf("Total facturado en ordenes CERRADAS: %.2f\n", total);
+    else cout << "ERROR: " << textoResultado(r) << "\n";
+}
+
+void menuReporteRepuestosMasUsados() {
+    cout << "\n--- REPORTE 2: REPUESTOS MAS UTILIZADOS (ordenes CERRADAS) ---\n";
+    if (!verificarHay(contarOrdenesPorEstado("CERRADA"), "No hay ordenes CERRADAS.",
+                      "Este reporte solo cuenta repuestos de ordenes cerradas.")) return;
+
+    UsoRepuesto top[TOP_REPUESTOS];
+    int cantidad;
+    Resultado r = calcularRepuestosMasUsados(top, &cantidad);
+    if (r != RES_OK) { cout << "ERROR: " << textoResultado(r) << "\n"; return; }
+    if (cantidad == 0) { cout << "Las ordenes cerradas no tienen repuestos.\n"; return; }
+
+    const int anchos[] = {4, 10, 32, 10};
+    const bool der[]   = {true, false, false, true};
+    const char* titulos[] = {"#", "Codigo", "Repuesto", "Unidades"};
+    imprimirBorde("+", "+", "+", anchos, 4);
+    imprimirFila(titulos, anchos, der, 4);
+    imprimirBorde("+", "+", "+", anchos, 4);
+    for (int i = 0; i < cantidad; i++) {
+        Repuesto rep;
+        Resultado rr = obtenerRepuestoPorID(top[i].idRepuesto, &rep);
+        bool hay = (rr == RES_OK || rr == RES_REPUESTO_ELIMINADO);
+        char pos[20], unidades[30];
+        snprintf(pos, sizeof(pos), "%d", i + 1);
+        snprintf(unidades, sizeof(unidades), "%ld", top[i].unidades);
+        const char* fila[] = {pos, hay ? rep.codigo : "?", hay ? rep.nombre : "(no encontrado)", unidades};
+        imprimirFila(fila, anchos, der, 4);
+    }
+    imprimirBorde("+", "+", "+", anchos, 4);
+}
+
+void menuReporteFacturacionMecanicos() {
+    cout << "\n--- REPORTE 3: FACTURACION POR MECANICO (ordenes CERRADAS) ---\n";
+    if (!verificarHay(contarMecanicosTotales(), "No hay mecanicos registrados.",
+                      "Primero registre uno en Gestion de Mecanicos.")) return;
+
+    const int anchos[] = {28, 9, 12, 12};
+    const bool der[]   = {false, true, true, true};
+    const char* titulos[] = {"Mecanico", "Ordenes", "M. obra", "Repuestos"};
+    imprimirBorde("+", "+", "+", anchos, 4);
+    imprimirFila(titulos, anchos, der, 4);
+    imprimirBorde("+", "+", "+", anchos, 4);
+
+    int saltar = 0;
+    while (true) {
+        Mecanico pagina[MAX_RESULTADOS];
+        int cantidad;
+        bool hayMas;
+        Resultado r = listarMecanicos(pagina, &cantidad, &hayMas, saltar);
+        if (r != RES_OK) { cout << "ERROR: " << textoResultado(r) << "\n"; return; }
+        for (int i = 0; i < cantidad; i++) {
+            int cerradas;
+            float manoObra, repuestos;
+            Resultado rf = calcularFacturacionMecanico(pagina[i].id, &cerradas, &manoObra, &repuestos);
+            if (rf != RES_OK) { cout << "ERROR: " << textoResultado(rf) << "\n"; return; }
+            char nombre[150], nOrd[20], mo[30], rp[30];
+            snprintf(nombre, sizeof(nombre), "%s%s", pagina[i].nombre, pagina[i].eliminado ? " (BAJA)" : "");
+            snprintf(nOrd, sizeof(nOrd), "%d", cerradas);
+            snprintf(mo, sizeof(mo), "%.2f", manoObra);
+            snprintf(rp, sizeof(rp), "%.2f", repuestos);
+            const char* fila[] = {nombre, nOrd, mo, rp};
+            imprimirFila(fila, anchos, der, 4);
+        }
+        saltar += cantidad;
+        if (!hayMas) break;
+    }
+    imprimirBorde("+", "+", "+", anchos, 4);
+    cout << "(Las ordenes abiertas y anuladas no suman en los totales.)\n";
+}
+
+void submenuReportes() {
+    const char* opciones[] = {"1. Historial de un vehiculo", "2. Repuestos mas utilizados",
+                              "3. Facturacion por mecanico", "0. Volver al menu principal"};
+    int op = -1;
+    while (op != 0 && !entradaTerminada) {
+        limpiarPantalla();
+        imprimirCajaMenu("REPORTES", nullptr, opciones, 4);
+        op = pedirOpcion("Seleccione una opcion: ", 3);
+        if (entradaTerminada) break;
+        if (op != 0) limpiarPantalla();
+        switch (op) {
+            case 1: menuReporteHistorialVehiculo(); break;
+            case 2: menuReporteRepuestosMasUsados(); break;
+            case 3: menuReporteFacturacionMecanicos(); break;
+        }
+        if (op != 0) pausar();
+    }
+}
+
+// --------------------------------------------------------------------
+//  4.9 MANTENIMIENTO (presentacion)
+// --------------------------------------------------------------------
+void menuVerificarIntegridad() {
+    cout << "\n--- VERIFICACION DE INTEGRIDAD ---\n";
+    static ReporteIntegridad rep;            // es grande: static para no cargar la pila
+    verificarIntegridad(&rep);
+
+    for (int i = 0; i < rep.guardados; i++) cout << rep.mensajes[i] << "\n";
+    if (rep.totalProblemas > rep.guardados)
+        cout << "(... y " << (rep.totalProblemas - rep.guardados) << " problema(s) mas)\n";
+    if (rep.totalProblemas > 0) cout << "\n";
+
+    const int ancho = 55;
+    char linea[120];
+    cout << "="; repetir("=", ancho); cout << "=\n";
+    imprimirPad(" REPORTE DE INTEGRIDAD DEL SISTEMA", ancho + 2, false); cout << "\n";
+    cout << "="; repetir("=", ancho); cout << "=\n";
+    snprintf(linea, sizeof(linea), " Vehiculos verificados : %d", rep.vehiculos);  cout << linea << "\n";
+    snprintf(linea, sizeof(linea), " Mecanicos verificados : %d", rep.mecanicos);  cout << linea << "\n";
+    snprintf(linea, sizeof(linea), " Repuestos verificados : %d", rep.repuestos);  cout << linea << "\n";
+    snprintf(linea, sizeof(linea), " Ordenes verificadas   : %d", rep.ordenes);    cout << linea << "\n";
+    snprintf(linea, sizeof(linea), " Lineas de detalle     : %d", rep.detalles);   cout << linea << "\n\n";
+    snprintf(linea, sizeof(linea), " Problemas encontrados : %d", rep.totalProblemas); cout << linea << "\n";
+    cout << (rep.totalProblemas == 0 ? " Estado: SISTEMA INTEGRO" : " Estado: SE ENCONTRARON PROBLEMAS") << "\n";
+    cout << "="; repetir("=", ancho); cout << "=\n";
+}
+
+void menuCrearBackup() {
+    cout << "\n--- RESPALDO DE DATOS ---\n";
+    if (!pedirConfirmacion("Crear un respaldo de todos los archivos .bin? (S/N): ")) { cout << "Operacion cancelada.\n"; return; }
+    char ruta[200];
+    Resultado r = crearBackup(ruta, sizeof(ruta));
+    if (r == RES_OK) cout << "Respaldo creado correctamente en la carpeta: " << ruta << "\n";
+    else cout << "ERROR: No se pudo crear el respaldo. " << textoResultado(r) << "\n";
+}
+
+void submenuMantenimiento() {
+    const char* opciones[] = {"1. Verificar integridad", "2. Crear respaldo (backup)", "0. Volver al menu principal"};
+    int op = -1;
+    while (op != 0 && !entradaTerminada) {
+        limpiarPantalla();
+        imprimirCajaMenu("MANTENIMIENTO", nullptr, opciones, 3);
+        op = pedirOpcion("Seleccione una opcion: ", 2);
+        if (entradaTerminada) break;
+        if (op != 0) limpiarPantalla();
+        switch (op) {
+            case 1: menuVerificarIntegridad(); break;
+            case 2: menuCrearBackup(); break;
+        }
+        if (op != 0) pausar();
+    }
+}
+
+// --------------------------------------------------------------------
+//  4.10 Menu principal
+// --------------------------------------------------------------------
+void menuPrincipal(const char* nombreTaller) {
+    const char* opciones[] = {"1. Gestion de Vehiculos", "2. Gestion de Mecanicos",
+                              "3. Inventario de Repuestos", "4. Ordenes de Servicio",
+                              "5. Reportes", "6. Mantenimiento", "0. Salir"};
+    char subtitulo[150];
+    snprintf(subtitulo, sizeof(subtitulo), "Taller: %s", nombreTaller);
+
+    bool salir = false;
+    while (!salir && !entradaTerminada) {
+        limpiarPantalla();
+        imprimirCajaMenu("SISTEMA DE GESTION DE TALLER", subtitulo, opciones, 7);
+        int op = pedirOpcion("Seleccione una opcion: ", 6);
+        if (entradaTerminada) break;
+        if (op != 0) limpiarPantalla();
+        switch (op) {
+            case 1: submenuVehiculos(); break;
+            case 2: submenuMecanicos(); break;
+            case 3: submenuInventario(); break;
+            case 4: submenuOrdenes(); break;
+            case 5: submenuReportes(); break;
+            case 6: submenuMantenimiento(); break;
+            case 0:
+                if (pedirConfirmacion("Seguro que desea salir? Sus datos ya estan guardados en disco (S/N): ")) salir = true;
+                break;
+        }
+    }
+}
+
+// Primer arranque: pide los datos del taller y crea taller.bin.
+// Retorna false si el usuario cancela o hay un error.
+bool pedirDatosTaller() {
+    Taller t;
+    memset(&t, 0, sizeof(t));
+    cout << "\n--- PRIMER ARRANQUE: DATOS DEL TALLER (escriba CANCELAR para salir) ---\n";
+    bool completo =
+        pedirDato("Nombre del taller: ", t.nombre, sizeof(t.nombre), DATO_TEXTO) &&
+        pedirDato("RIF: ", t.rif, sizeof(t.rif), DATO_TEXTO) &&
+        pedirDato("Direccion: ", t.direccion, sizeof(t.direccion), DATO_TEXTO) &&
+        pedirDato("Telefono: ", t.telefono, sizeof(t.telefono), DATO_TEXTO);
+    if (!completo) return false;
+    Resultado r = registrarTaller(t);
+    if (r != RES_OK) {
+        cout << "ERROR: No se pudo guardar el taller. " << textoResultado(r) << "\n";
+        return false;
+    }
+    cout << "Datos del taller guardados en " << RUTA_TALLER << ".\n";
+    return true;
+}
+
+
+// ======================================================================
+//  5. main
+// ======================================================================
+int main() {
+    // 1) Carpeta datos/ y archivos de entidades (se crean solo si faltan: lo
+    //    que ya existe NO se toca, asi la informacion sobrevive entre ejecuciones)
+    const char* fallido;
+    if (prepararArchivos(&fallido) != RES_OK) {
+        cout << "ERROR: No se pudo preparar el archivo '" << fallido << "'. Revise los permisos de la carpeta.\n";
+        return 1;
+    }
+
+    // 2) taller.bin: se crea en el primer arranque y despues solo se lee
+    if (!existeTaller()) {
+        if (!pedirDatosTaller()) {
+            cout << "\nNo se registro el taller. El programa se cierra.\n";
+            return 0;
+        }
+    }
+    Taller taller;
+    if (obtenerTaller(&taller) != RES_OK) {
+        cout << "ERROR: No se pudo leer '" << RUTA_TALLER << "'.\n";
+        return 1;
+    }
+
+    menuPrincipal(taller.nombre);
+
+    cout << "\nHasta pronto.\n";
     return 0;
 }
