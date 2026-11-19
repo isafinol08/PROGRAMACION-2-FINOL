@@ -3284,12 +3284,11 @@ bool pedirDatosTaller() {
     return true;
 }
 
-
 // ======================================================================
 //  5. main
 // ======================================================================
-int main() {
-    // 1) Carpeta datos/ y archivos de entidades (se crean solo si faltan: lo
+int main () {
+   // 1) Carpeta datos/ y archivos de entidades (se crean solo si faltan: lo
     //    que ya existe NO se toca, asi la informacion sobrevive entre ejecuciones)
     const char* fallido;
     if (prepararArchivos(&fallido) != RES_OK) {
