@@ -269,28 +269,17 @@ Todas las validaciones se hacen **antes** de la primera escritura. Aun asi el pr
 
 ## 8. Preguntas de analisis
 
-**1. Escribir con `write` una `OrdenServicio` del Proyecto 1 (con su `DetalleOrden*`), cerrar el programa, volver a ejecutarlo y leer ese registro. Que se observo al acceder a sus lineas? Por que?**
+** 1. Escribir con `write` una `OrdenServicio` del Proyecto 1 (con su `DetalleOrden*`), cerrar el programa, volver a ejecutarlo y leer ese registro. ¿Que se observo al acceder a sus lineas? ¿Por que?
 
-Se hizo el experimento con un programa que escribe la orden y otro que la lee. Al leer, el campo `numDetalles` y los demas campos estaban bien, y el puntero `detalles` mostraba una direccion,
-pero al acceder a `detalles[0]` el programa se cerro con **Segmentation fault** (codigo de salida 139).
-Pasa porque `write` copia los **bytes de la estructura**, y un puntero es solo una direccion de memoria (un numero). Se guardo la direccion, no las lineas que estaban en el heap.
-Al volver a ejecutar, el sistema operativo asigna otra memoria y esa direccion ya no es valida (o apunta a otra cosa). Por eso una estructura que va a disco no puede tener punteros:
-todo debe estar dentro de la estructura con tamano fijo, o en otro archivo, como hacemos con `detalles.bin`.
+Al escribir una estructura con un puntero `DetalleOrden*` mediante `write`, en el archivo binario solo se guardan los bytes de la direccion de memoria (un numero) que tenia el puntero en esa ejecucion, no los elementos del arreglo dinamico alojados en el heap. Al abrir el programa de nuevo y leer el registro, el puntero conserva esa direccion antigua que ya no pertenece a un arreglo valido en el espacio de direcciones actual, por lo que desreferenciarlo provoca comportamiento indefinido o un fallo de segmentacion (`Segmentation fault`). Para persistir en disco se requieren estructuras de tamaño fijo sin punteros ni `std::string`.
 
-**2. Al agregar un repuesto se escriben el detalle y el stock. Si el programa se interrumpe entre esas dos escrituras, que inconsistencia queda segun el orden elegido? Que orden deja el dano mas facil de detectar o corregir?**
+** 2. Al agregar un repuesto se escriben el detalle y el stock. Si el programa se interrumpe entre esas dos escrituras, ¿que inconsistencia queda segun el orden elegido? ¿Que orden deja el daño mas facil de detectar o corregir?
 
-Elegimos escribir **primero la linea y despues el stock**. Si se interrumpe en medio, la orden ya tiene el repuesto (y el cliente lo paga) pero el stock no se desconto: el inventario muestra **mas** unidades de las que hay.
-El dano queda **a la vista**: la linea existe en la orden, con su cantidad y precio, y se puede ver al mostrar la orden. Se corrige comparando con el inventario fisico y ajustando el stock.
-Con el orden contrario (primero el stock, despues la linea), una interrupcion deja unidades descontadas **sin ninguna linea que las explique**: el dano es invisible y no hay donde buscar a donde fueron esas unidades.
-Hay que ser honestos con la contrapartida: con nuestro orden el inventario puede quedar con unidades de mas, y se podria prometer una unidad que no existe. Ademas, `verificarIntegridad` **no detecta** ninguno de los dos casos
-(el stock inicial y las entradas no quedan como historial, asi que no se puede recalcular el stock a partir de las lineas). Elegimos dejar el rastro en la orden antes que perderlo.
+En nuestra implementacion (`agregarRepuestoAOrden`), primero se escribe la linea en `detalles.bin` y luego se descuenta el `stock` en `repuestos.bin`. Si se interrumpe entre ambas escrituras, la linea figura en la orden pero el stock del repuesto no se desconto (queda mayor al real). Si se hiciera al reves (primero descontar el stock y luego guardar la linea), se perderian unidades disponibles del inventario sin registro en la orden. Escribir primero el detalle hace mas evidente el faltante de descuento frente a las lineas registradas, aunque en un sistema de archivos planos sin bitacora transaccional (WAL) ni historial de movimientos de stock, `verificarIntegridad` no puede reconstruir por si sola el saldo exacto de stock de forma automatica sin respaldo o revision manual.
 
-**3. En el Proyecto 1 no se podia eliminar un mecanico con ordenes. Que habria pasado con el historial si se hubiera permitido la eliminacion fisica? Por que la baja logica lo resuelve?**
+** 3. En el Proyecto 1 no se podia eliminar un mecanico con ordenes. ¿Que habria pasado con el historial si se hubiera permitido la eliminacion fisica? ¿Por que la baja logica lo resuelve?
 
-Las ordenes guardan solo el `idMecanico`. Si el mecanico se borrara fisicamente (y se compactara el archivo), esas ordenes quedarian apuntando a un ID que no existe
-(o, peor, a otro mecanico que ocupo su lugar): se perderia quien hizo el trabajo, el reporte de facturacion por mecanico quedaria incompleto y `verificarIntegridad` marcaria ordenes rotas.
-Ademas se romperia la relacion `indice = ID - 1`. Con la baja logica el registro sigue en el archivo con `eliminado = true`:
-el ID sigue siendo valido, las ordenes CERRADAS y ANULADAS siguen mostrando su nombre (marcado BAJA), y solo se le impide recibir ordenes nuevas.
+Si se eliminara fisicamente un registro de `mecanicos.bin` y se compactara o reutilizara su posicion, las ordenes anteriores que almacenan `idMecanico` apuntarian a un ID inexistente o a otro mecanico distinto, perdiendose la trazabilidad historica y alterando los reportes de facturacion. Con el borrado logico (`eliminado = true`), el registro permanece en su posicion original (`indice = id - 1`), su ID sigue siendo valido para consultar el nombre y la especialidad en ordenes cerradas o anuladas, y `abrirOrden` / `darDeBajaMecanico` impiden asignarle nuevas ordenes.
 
 ## 9. Mantenimiento y pruebas
 
