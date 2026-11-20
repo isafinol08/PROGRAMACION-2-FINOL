@@ -1,0 +1,110 @@
+# ##############################################################
+# CASO DE USO 1 (ejecucion A): Persistencia entre ejecuciones - se registran los datos
+# ##############################################################
+# Primer arranque: como no existe taller.bin el programa pide los datos del taller
+Autoservicio El Lago
+J-12345678-9
+Av. 5 de Julio, Maracaibo
+0261-7000000
+# Verificacion de opciones del menu: texto y numeros fuera de rango se rechazan y se vuelve a pedir
+hola
+9
+-1
+# 1) Registrar 3 vehiculos
+1
+1
+AB123CD
+Toyota
+Corolla
+2015
+44000
+Maria Gonzalez
+V-12345678
+0414-1111111
+S
+0
+1
+1
+XY987ZW
+Chevrolet
+Aveo
+2009
+128300
+Maria Gonzalez
+V-12345678
+0414-1111111
+S
+0
+1
+1
+LM456NP
+Ford
+Fiesta
+2012
+90000
+Pedro Ramirez
+V-9876543
+0424-2222222
+S
+0
+# 1) Registrar 2 mecanicos (la especialidad en minusculas se acepta y se guarda en mayusculas)
+2
+1
+Jose Perez
+V-11111111
+frenos
+2024-03-15
+S
+0
+2
+1
+Ana Rojas
+V-22222222
+MOTOR
+2025-02-28
+S
+0
+# 1) Registrar 4 repuestos (BUJ-005 queda con stock igual a su stock minimo: 5 y 5)
+3
+1
+FRN-001
+Pastillas delanteras
+Brembo
+25.00
+10
+3
+S
+0
+3
+1
+FRN-014
+Liquido de frenos DOT4
+Bosch
+12.50
+5
+2
+S
+0
+3
+1
+FIL-020
+Filtro de aceite
+Mann
+8.00
+6
+2
+S
+0
+3
+1
+BUJ-005
+Bujia de iridio
+NGK
+4.50
+5
+5
+S
+0
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+0
+S

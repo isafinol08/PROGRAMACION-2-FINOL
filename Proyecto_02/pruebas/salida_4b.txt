@@ -1,0 +1,146 @@
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 4 (ejecucion B): Orden con 15 lineas
+# ##############################################################
+# 2) Se reinicio el programa: las 15 lineas siguen presentes
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 6
+
+--- DETALLE DE ORDEN ---
+Numero de orden: 2
+
+---------------------------------------------------------
+ORDEN DE SERVICIO #2
+---------------------------------------------------------
+Estado   : ABIERTA   Apertura: 2026-11-19   Cierre: ---
+Vehiculo : XY987ZW - Chevrolet Aveo (128300 km al ingreso)
+Mecanico : Ana Rojas
+Falla    : Revision general
+---------------------------------------------------------
+Codigo     Repuesto                  Cant    P.Unit      Total
+FRN-001    Pastillas delanteras         1     30.00      30.00
+FRN-014    Liquido de frenos DOT4       1     12.50      12.50
+FIL-020    Filtro de aceite             1      8.00       8.00
+BUJ-005    Bujia de iridio              1      4.50       4.50
+REP-006    Repuesto 006                 1     10.00      10.00
+REP-007    Repuesto 007                 1     10.00      10.00
+REP-008    Repuesto 008                 1     10.00      10.00
+REP-009    Repuesto 009                 1     10.00      10.00
+REP-010    Repuesto 010                 1     10.00      10.00
+REP-011    Repuesto 011                 1     10.00      10.00
+REP-012    Repuesto 012                 1     10.00      10.00
+REP-013    Repuesto 013                 1     10.00      10.00
+REP-014    Repuesto 014                 1     10.00      10.00
+REP-015    Repuesto 015                 1     10.00      10.00
+REP-016    Repuesto 016                 1     10.00      10.00
+---------------------------------------------------------
+Repuestos    :     165.00
+Mano de obra :       0.00
+TOTAL        :     165.00
+(Lineas de detalle: 15 de 15)
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Cerrar la orden #2 con mano de obra 20 (queda CERRADA para el caso de uso 5)
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- CERRAR ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Mano de obra: 20
+Cerrar esta orden? Ya no podra modificarse (S/N): S
+Orden #2 cerrada correctamente. Total: 185.00
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+Seleccione una opcion: 0
+Seguro que desea salir? (S/N): S
+
+Hasta pronto. Los datos quedaron guardados en la carpeta 'datos'.

@@ -1,0 +1,18 @@
+# ##############################################################
+# CASO DE USO 4 (ejecucion B): Orden con 15 lineas
+# ##############################################################
+# 2) Se reinicio el programa: las 15 lineas siguen presentes
+4
+6
+2
+0
+# Cerrar la orden #2 con mano de obra 20 (queda CERRADA para el caso de uso 5)
+4
+4
+2
+20
+S
+0
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+0
+S

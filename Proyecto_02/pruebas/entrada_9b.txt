@@ -1,0 +1,14 @@
+# ##############################################################
+# VALIDACIONES (9b): archivos inexistentes al iniciar
+# ##############################################################
+# Antes de ejecutar se borraron vehiculos.bin y ordenes.bin. El programa los crea con su header inicial y sigue funcionando
+# Menu de vehiculos: como no hay ninguno, solo aparece Registrar
+1
+0
+# Verificacion de integridad: los 4 archivos estan listos
+6
+1
+0
+# Salir del programa
+0
+S

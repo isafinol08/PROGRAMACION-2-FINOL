@@ -1,0 +1,299 @@
+# ##############################################################
+# VALIDACIONES (9a): formatos y reglas de negocio, sobre la carpeta datos/ pre-poblada
+# ##############################################################
+# ===== MENUS: opcion invalida, texto y opcion fuera de rango (se rechazan y se vuelve a pedir) =====
+hola
+99
+-1
+# ===== VEHICULOS =====
+# Placa invalida (AB-1), placa duplicada (AB123CD) y CANCELAR: no se crea nada
+1
+1
+AB-1
+AB123CD
+CANCELAR
+0
+# Anio con texto o fuera de rango, km negativo, cedula invalida; al final se guarda el vehiculo ZZ111AA
+1
+1
+ZZ111AA
+Kia
+Rio
+abc
+1949
+2028
+2020
+-5
+20000
+Test Uno
+12ab
+V-5555555
+0414-5555555
+S
+0
+# Eliminar ZZ111AA (sin ordenes): aceptado. Eliminar AB123CD (tiene ordenes): rechazado
+1
+4
+ZZ111AA
+S
+0
+1
+4
+AB123CD
+S
+0
+# La placa de un vehiculo eliminado SI puede volver a registrarse
+1
+1
+ZZ111AA
+Kia
+Rio
+2020
+20000
+Test Uno
+V-5555555
+0414-5555555
+S
+0
+# Buscar una placa que no existe y un ID que no existe
+1
+2
+2
+ZZ999ZZ
+0
+1
+2
+1
+999
+0
+1
+5
+0
+# ===== MECANICOS =====
+# Especialidad invalida (turbo), fecha invalida (2025-02-30) y cedula duplicada (V-11111111)
+2
+1
+Pedro Test
+V-11111111
+turbo
+frenos
+2025-02-30
+2025-02-28
+S
+0
+# Baja con orden ABIERTA (Jose Perez) -> rechazada; baja de uno ya dado de baja; ID inexistente
+2
+4
+1
+S
+0
+2
+4
+4
+0
+2
+4
+99
+0
+2
+3
+0
+# ===== REPUESTOS =====
+# Codigo duplicado (FRN-001), precio 0 / texto / negativo, stock negativo; al final se guarda TST-001
+3
+1
+FRN-001
+TST-001
+Repuesto test
+Marca
+0
+abc
+-3
+5.50
+-1
+10
+2
+S
+0
+# Entrada de mercancia: cantidad 0, texto y negativa se rechazan; 5 se acepta; codigo inexistente
+3
+3
+TST-001
+0
+abc
+-4
+5
+0
+3
+3
+NOEXISTE
+0
+# Cambiar precio: negativo y 0.00 se rechazan; 7.25 se acepta
+3
+4
+TST-001
+-2
+0.00
+7.25
+S
+0
+# Eliminar FRN-001 (usado en ordenes) -> rechazado; eliminar TST-001 (sin uso) -> aceptado
+3
+5
+FRN-001
+S
+0
+3
+5
+TST-001
+S
+0
+3
+6
+0
+# ===== ORDENES: apertura =====
+# Vehiculo con orden ABIERTA (AB123CD) -> rechazado
+4
+1
+AB123CD
+2
+46500
+Otra falla
+S
+0
+# Placa inexistente, mecanico inexistente (99) y mecanico dado de baja (4)
+4
+1
+ZZ999ZZ
+0
+4
+1
+KL789QR
+99
+0
+4
+1
+KL789QR
+4
+0
+# Kilometraje menor al registrado (texto y negativo tambien se rechazan)
+4
+1
+PQ333CC
+2
+abc
+-5
+100
+Falla
+S
+0
+# El mecanico Ana (ID 2) abre 3 ordenes (#11, #12, #13) y la cuarta se rechaza
+4
+1
+KL789QR
+2
+60000
+Cambio de aceite
+S
+0
+4
+1
+PQ111AA
+2
+150000
+Ruido en motor
+S
+0
+4
+1
+PQ222BB
+2
+30000
+Recalentamiento
+S
+0
+4
+1
+PQ333CC
+2
+20000
+Vibracion
+S
+0
+# ===== ORDENES: modificaciones =====
+# Mas unidades que el stock; cantidad con texto y 0 se rechazan, luego 3 se acepta
+4
+2
+11
+FRN-001
+99999
+0
+4
+2
+11
+FRN-001
+abc
+0
+3
+0
+# Orden inexistente (99) y repuesto inexistente
+4
+2
+99
+0
+4
+2
+11
+NOEXISTE
+0
+# Modificar una orden CERRADA (#1): el mensaje indica su estado
+4
+2
+1
+FRN-001
+1
+0
+4
+3
+1
+FRN-001
+0
+4
+4
+1
+0
+# Quitar un repuesto que no esta en la orden
+4
+3
+11
+ACE-020
+0
+# Cerrar la orden #12 sin repuestos ni mano de obra: -5 se rechaza, con 0 se rechaza la orden
+4
+4
+12
+-5
+0
+S
+0
+# Anular una orden ya ANULADA (#7) y cancelar una anulacion con N
+4
+5
+7
+0
+4
+5
+11
+N
+0
+4
+7
+1
+0
+# ===== INTEGRIDAD: despues de todas las pruebas =====
+6
+1
+0
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+0
+S

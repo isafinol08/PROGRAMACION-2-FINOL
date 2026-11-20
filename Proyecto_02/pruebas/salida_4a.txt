@@ -1,0 +1,1451 @@
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 4 (ejecucion A): Orden con 15 lineas
+# ##############################################################
+# 1) Registrar 12 repuestos mas (REP-006 a REP-017) para tener 15 o mas repuestos distintos
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: REP-006
+Nombre: Repuesto 006
+Marca: Generica
+Precio: 10.00
+Stock inicial: 20
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'REP-006' registrado correctamente (ID 5).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: REP-007
+Nombre: Repuesto 007
+Marca: Generica
+Precio: 10.00
+Stock inicial: 20
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'REP-007' registrado correctamente (ID 6).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: REP-008
+Nombre: Repuesto 008
+Marca: Generica
+Precio: 10.00
+Stock inicial: 20
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'REP-008' registrado correctamente (ID 7).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: REP-009
+Nombre: Repuesto 009
+Marca: Generica
+Precio: 10.00
+Stock inicial: 20
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'REP-009' registrado correctamente (ID 8).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: REP-010
+Nombre: Repuesto 010
+Marca: Generica
+Precio: 10.00
+Stock inicial: 20
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'REP-010' registrado correctamente (ID 9).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: REP-011
+Nombre: Repuesto 011
+Marca: Generica
+Precio: 10.00
+Stock inicial: 20
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'REP-011' registrado correctamente (ID 10).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: REP-012
+Nombre: Repuesto 012
+Marca: Generica
+Precio: 10.00
+Stock inicial: 20
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'REP-012' registrado correctamente (ID 11).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: REP-013
+Nombre: Repuesto 013
+Marca: Generica
+Precio: 10.00
+Stock inicial: 20
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'REP-013' registrado correctamente (ID 12).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: REP-014
+Nombre: Repuesto 014
+Marca: Generica
+Precio: 10.00
+Stock inicial: 20
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'REP-014' registrado correctamente (ID 13).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: REP-015
+Nombre: Repuesto 015
+Marca: Generica
+Precio: 10.00
+Stock inicial: 20
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'REP-015' registrado correctamente (ID 14).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: REP-016
+Nombre: Repuesto 016
+Marca: Generica
+Precio: 10.00
+Stock inicial: 20
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'REP-016' registrado correctamente (ID 15).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: REP-017
+Nombre: Repuesto 017
+Marca: Generica
+Precio: 10.00
+Stock inicial: 20
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'REP-017' registrado correctamente (ID 16).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 1) Abrir una orden para XY987ZW (mecanico Ana = ID 2)
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: XY987ZW
+Vehiculo: XY987ZW - Chevrolet Aveo (128300 km), propietario Maria Gonzalez
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  0        Activo
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  0        Activo
+Total mostrados: 2
+ID del mecanico: 2
+Kilometraje de ingreso: 128300
+Falla reportada: Revision general
+Se abrira una orden para 'XY987ZW' con el mecanico Ana Rojas (128300 km).
+Abrir esta orden? (S/N): S
+Orden #2 abierta para el vehiculo 'XY987ZW' con el mecanico Ana Rojas.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 1) Agregar 15 repuestos distintos (1 unidad de cada uno)
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: FRN-001
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Pastillas delanteras' a la orden #2. Stock restante: 5.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: FRN-014
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Liquido de frenos DOT4' a la orden #2. Stock restante: 4.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: FIL-020
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Filtro de aceite' a la orden #2. Stock restante: 4.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: BUJ-005
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Bujia de iridio' a la orden #2. Stock restante: 2.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: REP-006
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Repuesto 006' a la orden #2. Stock restante: 19.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: REP-007
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Repuesto 007' a la orden #2. Stock restante: 19.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: REP-008
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Repuesto 008' a la orden #2. Stock restante: 19.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: REP-009
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Repuesto 009' a la orden #2. Stock restante: 19.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: REP-010
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Repuesto 010' a la orden #2. Stock restante: 19.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: REP-011
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Repuesto 011' a la orden #2. Stock restante: 19.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: REP-012
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Repuesto 012' a la orden #2. Stock restante: 19.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: REP-013
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Repuesto 013' a la orden #2. Stock restante: 19.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: REP-014
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Repuesto 014' a la orden #2. Stock restante: 19.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: REP-015
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Repuesto 015' a la orden #2. Stock restante: 19.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: REP-016
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Repuesto 016' a la orden #2. Stock restante: 19.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# LIMITE: la linea 16 distinta (REP-017) se rechaza
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 2
+Codigo del repuesto: REP-017
+Cantidad: 1
+ERROR: La orden #2 ya tiene 15 lineas y no admite otro repuesto distinto.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+Seleccione una opcion: 0
+Seguro que desea salir? (S/N): S
+
+Hasta pronto. Los datos quedaron guardados en la carpeta 'datos'.

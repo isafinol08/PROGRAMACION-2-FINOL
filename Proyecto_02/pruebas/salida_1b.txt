@@ -1,0 +1,164 @@
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 1 (ejecucion B): Persistencia entre ejecuciones - se reinicio el programa
+# ##############################################################
+# 2) Se cerro el programa y se volvio a ejecutar: no pide los datos del taller (ya existe taller.bin)
+# 3) Los 3 vehiculos siguen presentes con los mismos IDs (1 a 3)
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 5
+
+--- LISTA DE VEHICULOS ---
+ID   Placa    Marca      Modelo     Anio  Km       Propietario            Cedula      
+1    AB123CD  Toyota     Corolla    2015  44000    Maria Gonzalez         V-12345678  
+2    XY987ZW  Chevrolet  Aveo       2009  128300   Maria Gonzalez         V-12345678  
+3    LM456NP  Ford       Fiesta     2012  90000    Pedro Ramirez          V-9876543   
+Total mostrados: 3
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 3) Los 2 mecanicos siguen presentes (IDs 1 y 2)
+Seleccione una opcion: 2
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 3
+
+--- LISTA DE MECANICOS ---
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  0        Activo
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  0        Activo
+Total mostrados: 2
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 3) Los 4 repuestos siguen presentes; BUJ-005 aparece como BAJO STOCK
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 6
+
+--- INVENTARIO DE REPUESTOS ---
+ID   Codigo     Nombre                   Marca         Precio  Stock    Min  Alerta
+1    FRN-001    Pastillas delanteras     Brembo         25.00     10      3  
+2    FRN-014    Liquido de frenos DOT4   Bosch          12.50      5      2  
+3    FIL-020    Filtro de aceite         Mann            8.00      6      2  
+4    BUJ-005    Bujia de iridio          NGK             4.50      5      5  BAJO STOCK
+Total mostrados: 4
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+Seleccione una opcion: 0
+Seguro que desea salir? (S/N): S
+
+Hasta pronto. Los datos quedaron guardados en la carpeta 'datos'.

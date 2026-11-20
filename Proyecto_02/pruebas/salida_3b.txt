@@ -1,0 +1,268 @@
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 3 (ejecucion B): La orden sobrevive con su detalle
+# ##############################################################
+# 2) Se reinicio el programa. 3) Agregar un 4to repuesto: 2 unidades de BUJ-005
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Codigo del repuesto: BUJ-005
+Cantidad: 2
+Se agregaron 2 unidad(es) de 'Bujia de iridio' a la orden #1. Stock restante: 3.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 3) Agregar 2 unidades mas de FRN-001 -> se acumulan: UNA sola linea de FRN-001 con 4 unidades
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Codigo del repuesto: FRN-001
+Cantidad: 2
+Se agregaron 2 unidad(es) de 'Pastillas delanteras' a la orden #1. Stock restante: 6.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 4) Quitar FRN-014 (1 unidad) -> su stock vuelve a 5 en repuestos.bin
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 3
+
+--- QUITAR REPUESTO DE ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Codigo del repuesto a quitar: FRN-014
+Se quito 'Liquido de frenos DOT4' de la orden #1 (1 unidad(es) devueltas al inventario). Stock actual: 5.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Inventario despues de quitar: FRN-001 = 6 y FRN-014 = 5
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 6
+
+--- INVENTARIO DE REPUESTOS ---
+ID   Codigo     Nombre                   Marca         Precio  Stock    Min  Alerta
+1    FRN-001    Pastillas delanteras     Brembo         25.00      6      3  
+2    FRN-014    Liquido de frenos DOT4   Bosch          12.50      5      2  
+3    FIL-020    Filtro de aceite         Mann            8.00      5      2  
+4    BUJ-005    Bujia de iridio          NGK             4.50      3      5  BAJO STOCK
+Total mostrados: 4
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 5) Cerrar la orden registrando mano de obra 40
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- CERRAR ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Mano de obra: 40
+Cerrar esta orden? Ya no podra modificarse (S/N): S
+Orden #1 cerrada correctamente. Total: 157.00
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+Seleccione una opcion: 0
+Seguro que desea salir? (S/N): S
+
+Hasta pronto. Los datos quedaron guardados en la carpeta 'datos'.

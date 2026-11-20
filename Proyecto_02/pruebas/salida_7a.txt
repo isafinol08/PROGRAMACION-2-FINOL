@@ -1,0 +1,173 @@
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 7 (ejecucion A): Integridad tras una restauracion parcial
+# ##############################################################
+# 1) Crear un backup (carpeta backup_AAAA-MM-DD_HH-MM)
+Seleccione una opcion: 6
+
+=============================================
+  MANTENIMIENTO
+=============================================
+1. Verificar integridad
+2. Crear respaldo (backup)
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- RESPALDO DE DATOS ---
+Respaldo creado correctamente en la carpeta: backup_2026-11-19_02-09
+
+=============================================
+  MANTENIMIENTO
+=============================================
+1. Verificar integridad
+2. Crear respaldo (backup)
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 2) Registrar un vehiculo nuevo (ID 7) y abrirle una orden (sera la orden #7, mecanico Luis = ID 3)
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: PQ555EE
+Marca: Nissan
+Modelo: Sentra
+Anio (1950-2027): 2014
+Kilometraje: 110000
+Nombre del propietario: Mario Soto
+Cedula del propietario: J-1000005
+Telefono del propietario: 0414-0000005
+
+Datos a guardar:
+  Vehiculo    : PQ555EE - Nissan Sentra 2014 (ID 0)
+  Kilometraje : 110000 km
+  Propietario : Mario Soto | Cedula: J-1000005 | Tel: 0414-0000005
+Guardar este vehiculo? (S/N): S
+Vehiculo 'PQ555EE' registrado correctamente (ID 7).
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: PQ555EE
+Vehiculo: PQ555EE - Nissan Sentra (110000 km), propietario Mario Soto
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  0        BAJA
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  3        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  0        Activo
+Total mostrados: 3
+ID del mecanico: 3
+Kilometraje de ingreso: 110000
+Falla reportada: Revision general
+Se abrira una orden para 'PQ555EE' con el mecanico Luis Fuenmayor (110000 km).
+Abrir esta orden? (S/N): S
+Orden #7 abierta para el vehiculo 'PQ555EE' con el mecanico Luis Fuenmayor.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+Seleccione una opcion: 0
+Seguro que desea salir? (S/N): S
+
+Hasta pronto. Los datos quedaron guardados en la carpeta 'datos'.

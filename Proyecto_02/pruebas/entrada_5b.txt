@@ -1,0 +1,15 @@
+# ##############################################################
+# CASO DE USO 5 (ejecucion B): Anulacion con reversion en disco
+# ##############################################################
+# 2) Se reinicio el programa. 3) El stock de cada repuesto de la orden #2 volvio a su valor previo (+1 por linea: FRN-001 = 6)
+3
+6
+0
+# Anular otra vez una orden ANULADA -> rechazado, el mensaje indica el estado actual
+4
+5
+2
+0
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+0
+S

@@ -1,0 +1,72 @@
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 7 (ejecucion B): Integridad tras una restauracion parcial
+# ##############################################################
+# 3) Entre las dos ejecuciones se reemplazo manualmente datos/vehiculos.bin por la copia del backup
+# 4) Ejecutar la verificacion de integridad: debe detectar la orden #7 que apunta a un vehiculo inexistente
+Seleccione una opcion: 6
+
+=============================================
+  MANTENIMIENTO
+=============================================
+1. Verificar integridad
+2. Crear respaldo (backup)
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- VERIFICACION DE INTEGRIDAD ---
+ROTO: Orden #7 apunta al vehiculo ID 7 (no existe en vehiculos.bin)
+
+=========================================================
+  REPORTE DE INTEGRIDAD DEL SISTEMA
+=========================================================
+  Vehiculos verificados : 6
+  Mecanicos verificados : 3
+  Repuestos verificados : 16
+  Ordenes verificadas   : 7
+
+  Problemas encontrados : 1
+  Estado: SE ENCONTRARON PROBLEMAS
+=========================================================
+
+=============================================
+  MANTENIMIENTO
+=============================================
+1. Verificar integridad
+2. Crear respaldo (backup)
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+Seleccione una opcion: 0
+Seguro que desea salir? (S/N): S
+
+Hasta pronto. Los datos quedaron guardados en la carpeta 'datos'.

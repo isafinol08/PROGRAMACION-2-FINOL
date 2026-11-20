@@ -1,0 +1,285 @@
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 3 (ejecucion A): La orden sobrevive con su detalle
+# ##############################################################
+# 1) Abrir una orden para AB123CD con kilometraje 45000 (mecanico Jose = ID 1)
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: AB123CD
+Vehiculo: AB123CD - Toyota Corolla (44000 km), propietario Maria Gonzalez
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  0        Activo
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  0        Activo
+Total mostrados: 2
+ID del mecanico: 1
+Kilometraje de ingreso: 45000
+Falla reportada: Ruido al frenar
+Se abrira una orden para 'AB123CD' con el mecanico Jose Perez (45000 km).
+Abrir esta orden? (S/N): S
+Orden #1 abierta para el vehiculo 'AB123CD' con el mecanico Jose Perez.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 1) Agregar 3 repuestos distintos: 2 de FRN-001, 1 de FRN-014 y 1 de FIL-020
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Codigo del repuesto: FRN-001
+Cantidad: 2
+Se agregaron 2 unidad(es) de 'Pastillas delanteras' a la orden #1. Stock restante: 8.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Codigo del repuesto: FRN-014
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Liquido de frenos DOT4' a la orden #1. Stock restante: 4.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Codigo del repuesto: FIL-020
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Filtro de aceite' a la orden #1. Stock restante: 5.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Mostrar la orden antes de cerrar el programa
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 6
+
+--- DETALLE DE ORDEN ---
+Numero de orden: 1
+
+---------------------------------------------------------
+ORDEN DE SERVICIO #1
+---------------------------------------------------------
+Estado   : ABIERTA   Apertura: 2026-11-19   Cierre: ---
+Vehiculo : AB123CD - Toyota Corolla (45000 km al ingreso)
+Mecanico : Jose Perez
+Falla    : Ruido al frenar
+---------------------------------------------------------
+Codigo     Repuesto                  Cant    P.Unit      Total
+FRN-001    Pastillas delanteras         2     25.00      50.00
+FRN-014    Liquido de frenos DOT4       1     12.50      12.50
+FIL-020    Filtro de aceite             1      8.00       8.00
+---------------------------------------------------------
+Repuestos    :      70.50
+Mano de obra :       0.00
+TOTAL        :      70.50
+(Lineas de detalle: 3 de 15)
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+Seleccione una opcion: 0
+Seguro que desea salir? (S/N): S
+
+Hasta pronto. Los datos quedaron guardados en la carpeta 'datos'.

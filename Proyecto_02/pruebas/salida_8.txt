@@ -1,0 +1,812 @@
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 8: Reportes
+# ##############################################################
+# (preparacion) Completar ordenes cerradas, abiertas y anuladas entre 3 mecanicos (8 ordenes en total)
+# Orden #4 (Ana): 2 de FRN-001 y 1 de BUJ-005, mano de obra 25 -> CERRADA
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 4
+Codigo del repuesto: FRN-001
+Cantidad: 2
+Se agregaron 2 unidad(es) de 'Pastillas delanteras' a la orden #4. Stock restante: 4.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 4
+Codigo del repuesto: BUJ-005
+Cantidad: 1
+Se agregaron 1 unidad(es) de 'Bujia de iridio' a la orden #4. Stock restante: 2.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- CERRAR ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 4
+Mano de obra: 25
+Cerrar esta orden? Ya no podra modificarse (S/N): S
+Orden #4 cerrada correctamente. Total: 89.50
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Orden #5 (Ana): 2 de FIL-020 y 3 de REP-006, sin mano de obra -> CERRADA
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 5
+Codigo del repuesto: FIL-020
+Cantidad: 2
+Se agregaron 2 unidad(es) de 'Filtro de aceite' a la orden #5. Stock restante: 3.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 5
+Codigo del repuesto: REP-006
+Cantidad: 3
+Se agregaron 3 unidad(es) de 'Repuesto 006' a la orden #5. Stock restante: 17.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- CERRAR ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 5
+Mano de obra: 0
+Cerrar esta orden? Ya no podra modificarse (S/N): S
+Orden #5 cerrada correctamente. Total: 46.00
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Orden #6 (Ana): 4 de REP-007 y luego se ANULA (no debe sumar en los reportes)
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 6
+Codigo del repuesto: REP-007
+Cantidad: 4
+Se agregaron 4 unidad(es) de 'Repuesto 007' a la orden #6. Stock restante: 16.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 5
+
+--- ANULAR ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 6
+La orden #6 esta ABIERTA. Al anularla se devolveran 4 unidad(es) al inventario.
+Anular esta orden? (S/N): S
+Orden #6 anulada. Estado actual: ANULADA.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Orden #8 (Luis): 2 de REP-008, mano de obra 50 -> CERRADA. La orden #7 de Luis queda ABIERTA (no suma)
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: XY987ZW
+Vehiculo: XY987ZW - Chevrolet Aveo (128300 km), propietario Maria Gonzalez
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  0        BAJA
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  0        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  1        Activo
+Total mostrados: 3
+ID del mecanico: 3
+Kilometraje de ingreso: 128300
+Falla reportada: Cambio de correa
+Se abrira una orden para 'XY987ZW' con el mecanico Luis Fuenmayor (128300 km).
+Abrir esta orden? (S/N): S
+Orden #8 abierta para el vehiculo 'XY987ZW' con el mecanico Luis Fuenmayor.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 8
+Codigo del repuesto: REP-008
+Cantidad: 2
+Se agregaron 2 unidad(es) de 'Repuesto 008' a la orden #8. Stock restante: 18.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- CERRAR ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 8
+Mano de obra: 50
+Cerrar esta orden? Ya no podra modificarse (S/N): S
+Orden #8 cerrada correctamente. Total: 70.00
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Listar todas las ordenes: 5 cerradas, 2 anuladas y 1 abierta
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 7
+
+--- LISTAR ORDENES ---
+1. Todas
+2. Abiertas
+3. Cerradas
+4. Anuladas
+5. Historial de un vehiculo
+0. Volver
+Seleccione una opcion: 1
+Orden  Estado    Vehiculo                       Mecanico               Apertura         Total
+#1     CERRADA   AB123CD - Toyota Corolla       Jose Perez (BAJA)      2026-11-19      157.00
+#2     ANULADA   XY987ZW - Chevrolet Aveo       Ana Rojas              2026-11-19      185.00
+#3     CERRADA   AB123CD - Toyota Corolla       Jose Perez (BAJA)      2026-11-19       30.00
+#4     CERRADA   PQ111AA - Honda Civic          Ana Rojas              2026-11-19       89.50
+#5     CERRADA   PQ222BB - Mazda Tres           Ana Rojas              2026-11-19       46.00
+#6     ANULADA   PQ333CC - Kia Rio              Ana Rojas              2026-11-19       40.00
+#7     ABIERTA   PQ555EE - Nissan Sentra        Luis Fuenmayor         2026-11-19        0.00
+#8     CERRADA   XY987ZW - Chevrolet Aveo       Luis Fuenmayor         2026-11-19       70.00
+Total de ordenes: 8
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 1) Reporte 1: historial del vehiculo AB123CD (ordenes y total facturado en CERRADAS)
+Seleccione una opcion: 5
+
+=============================================
+  REPORTES
+=============================================
+1. Historial de vehiculo
+2. Repuestos mas utilizados
+3. Facturacion por mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REPORTE 1: HISTORIAL DE VEHICULO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: AB123CD
+  Vehiculo    : AB123CD - Toyota Corolla 2015 (ID 1)
+  Kilometraje : 46000 km
+  Propietario : Maria Gonzalez | Cedula: V-12345678 | Tel: 0414-1111111
+
+Orden  Fecha       Mecanico               Estado         Total
+#1     2026-11-19  Jose Perez (BAJA)      CERRADA       157.00
+#3     2026-11-19  Jose Perez (BAJA)      CERRADA        30.00
+Total facturado en ordenes CERRADAS: 187.00
+
+=============================================
+  REPORTES
+=============================================
+1. Historial de vehiculo
+2. Repuestos mas utilizados
+3. Facturacion por mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 2) Reporte 2: repuestos mas utilizados (solo ordenes CERRADAS)
+Seleccione una opcion: 5
+
+=============================================
+  REPORTES
+=============================================
+1. Historial de vehiculo
+2. Repuestos mas utilizados
+3. Facturacion por mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- REPORTE 2: REPUESTOS MAS UTILIZADOS (ordenes CERRADAS) ---
+Pos  Codigo     Repuesto                         Unidades
+1    FRN-001    Pastillas delanteras                    6
+2    FIL-020    Filtro de aceite                        3
+3    BUJ-005    Bujia de iridio                         3
+4    REP-006    Repuesto 006                            3
+5    REP-008    Repuesto 008                            2
+
+=============================================
+  REPORTES
+=============================================
+1. Historial de vehiculo
+2. Repuestos mas utilizados
+3. Facturacion por mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 3) Reporte 3: facturacion por mecanico (Jose aparece como BAJA; Jose: repuestos 117.00)
+Seleccione una opcion: 5
+
+=============================================
+  REPORTES
+=============================================
+1. Historial de vehiculo
+2. Repuestos mas utilizados
+3. Facturacion por mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 3
+
+--- REPORTE 3: FACTURACION POR MECANICO (ordenes CERRADAS) ---
+Mecanico                      Ordenes      M. obra    Repuestos
+Jose Perez (BAJA)                   2        70.00       117.00
+Ana Rojas                           2        25.00       110.50
+Luis Fuenmayor                      1        50.00        20.00
+
+=============================================
+  REPORTES
+=============================================
+1. Historial de vehiculo
+2. Repuestos mas utilizados
+3. Facturacion por mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Verificacion de integridad final
+Seleccione una opcion: 6
+
+=============================================
+  MANTENIMIENTO
+=============================================
+1. Verificar integridad
+2. Crear respaldo (backup)
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- VERIFICACION DE INTEGRIDAD ---
+
+=========================================================
+  REPORTE DE INTEGRIDAD DEL SISTEMA
+=========================================================
+  Vehiculos verificados : 7
+  Mecanicos verificados : 3
+  Repuestos verificados : 16
+  Ordenes verificadas   : 8
+
+  Problemas encontrados : 0
+  Estado: SISTEMA INTEGRO
+=========================================================
+
+=============================================
+  MANTENIMIENTO
+=============================================
+1. Verificar integridad
+2. Crear respaldo (backup)
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+Seleccione una opcion: 0
+Seguro que desea salir? (S/N): S
+
+Hasta pronto. Los datos quedaron guardados en la carpeta 'datos'.

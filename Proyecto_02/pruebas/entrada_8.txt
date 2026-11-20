@@ -1,0 +1,100 @@
+# ##############################################################
+# CASO DE USO 8: Reportes
+# ##############################################################
+# (preparacion) Completar ordenes cerradas, abiertas y anuladas entre 3 mecanicos (8 ordenes en total)
+# Orden #4 (Ana): 2 de FRN-001 y 1 de BUJ-005, mano de obra 25 -> CERRADA
+4
+2
+4
+FRN-001
+2
+0
+4
+2
+4
+BUJ-005
+1
+0
+4
+4
+4
+25
+S
+0
+# Orden #5 (Ana): 2 de FIL-020 y 3 de REP-006, sin mano de obra -> CERRADA
+4
+2
+5
+FIL-020
+2
+0
+4
+2
+5
+REP-006
+3
+0
+4
+4
+5
+0
+S
+0
+# Orden #6 (Ana): 4 de REP-007 y luego se ANULA (no debe sumar en los reportes)
+4
+2
+6
+REP-007
+4
+0
+4
+5
+6
+S
+0
+# Orden #8 (Luis): 2 de REP-008, mano de obra 50 -> CERRADA. La orden #7 de Luis queda ABIERTA (no suma)
+4
+1
+XY987ZW
+3
+128300
+Cambio de correa
+S
+0
+4
+2
+8
+REP-008
+2
+0
+4
+4
+8
+50
+S
+0
+# Listar todas las ordenes: 5 cerradas, 2 anuladas y 1 abierta
+4
+7
+1
+0
+# 1) Reporte 1: historial del vehiculo AB123CD (ordenes y total facturado en CERRADAS)
+5
+1
+AB123CD
+0
+# 2) Reporte 2: repuestos mas utilizados (solo ordenes CERRADAS)
+5
+2
+0
+# 3) Reporte 3: facturacion por mecanico (Jose aparece como BAJA; Jose: repuestos 117.00)
+5
+3
+0
+# Verificacion de integridad final
+6
+1
+0
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+0
+S

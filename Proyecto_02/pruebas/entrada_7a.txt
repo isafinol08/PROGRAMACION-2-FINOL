@@ -1,0 +1,31 @@
+# ##############################################################
+# CASO DE USO 7 (ejecucion A): Integridad tras una restauracion parcial
+# ##############################################################
+# 1) Crear un backup (carpeta backup_AAAA-MM-DD_HH-MM)
+6
+2
+0
+# 2) Registrar un vehiculo nuevo (ID 7) y abrirle una orden (sera la orden #7, mecanico Luis = ID 3)
+1
+1
+PQ555EE
+Nissan
+Sentra
+2014
+110000
+Mario Soto
+J-1000005
+0414-0000005
+S
+0
+4
+1
+PQ555EE
+3
+110000
+Revision general
+S
+0
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+0
+S

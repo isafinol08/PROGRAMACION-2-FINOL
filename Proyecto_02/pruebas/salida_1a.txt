@@ -1,0 +1,479 @@
+Primer arranque: registre los datos del taller.
+
+# ##############################################################
+# CASO DE USO 1 (ejecucion A): Persistencia entre ejecuciones - se registran los datos
+# ##############################################################
+# Primer arranque: como no existe taller.bin el programa pide los datos del taller
+Nombre del taller: Autoservicio El Lago
+RIF: J-12345678-9
+Direccion: Av. 5 de Julio, Maracaibo
+Telefono: 0261-7000000
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Verificacion de opciones del menu: texto y numeros fuera de rango se rechazan y se vuelve a pedir
+Seleccione una opcion: hola
+ERROR: 'hola' no es una opcion valida.
+Seleccione una opcion: 9
+ERROR: Elija una opcion entre 0 y 6.
+Seleccione una opcion: -1
+ERROR: Elija una opcion entre 0 y 6.
+
+# 1) Registrar 3 vehiculos
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: AB123CD
+Marca: Toyota
+Modelo: Corolla
+Anio (1950-2027): 2015
+Kilometraje: 44000
+Nombre del propietario: Maria Gonzalez
+Cedula del propietario: V-12345678
+Telefono del propietario: 0414-1111111
+
+Datos a guardar:
+  Vehiculo    : AB123CD - Toyota Corolla 2015 (ID 0)
+  Kilometraje : 44000 km
+  Propietario : Maria Gonzalez | Cedula: V-12345678 | Tel: 0414-1111111
+Guardar este vehiculo? (S/N): S
+Vehiculo 'AB123CD' registrado correctamente (ID 1).
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: XY987ZW
+Marca: Chevrolet
+Modelo: Aveo
+Anio (1950-2027): 2009
+Kilometraje: 128300
+Nombre del propietario: Maria Gonzalez
+Cedula del propietario: V-12345678
+Telefono del propietario: 0414-1111111
+
+Datos a guardar:
+  Vehiculo    : XY987ZW - Chevrolet Aveo 2009 (ID 0)
+  Kilometraje : 128300 km
+  Propietario : Maria Gonzalez | Cedula: V-12345678 | Tel: 0414-1111111
+Guardar este vehiculo? (S/N): S
+Vehiculo 'XY987ZW' registrado correctamente (ID 2).
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: LM456NP
+Marca: Ford
+Modelo: Fiesta
+Anio (1950-2027): 2012
+Kilometraje: 90000
+Nombre del propietario: Pedro Ramirez
+Cedula del propietario: V-9876543
+Telefono del propietario: 0424-2222222
+
+Datos a guardar:
+  Vehiculo    : LM456NP - Ford Fiesta 2012 (ID 0)
+  Kilometraje : 90000 km
+  Propietario : Pedro Ramirez | Cedula: V-9876543 | Tel: 0424-2222222
+Guardar este vehiculo? (S/N): S
+Vehiculo 'LM456NP' registrado correctamente (ID 3).
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 1) Registrar 2 mecanicos (la especialidad en minusculas se acepta y se guarda en mayusculas)
+Seleccione una opcion: 2
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR MECANICO (escriba CANCELAR para abortar) ---
+Nombre: Jose Perez
+Cedula: V-11111111
+Especialidad (MOTOR/FRENOS/ELECTRICIDAD/SUSPENSION/GENERAL): frenos
+Fecha de ingreso (YYYY-MM-DD): 2024-03-15
+Guardar este mecanico? (S/N): S
+Mecanico 'Jose Perez' registrado correctamente (ID 1).
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 2
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR MECANICO (escriba CANCELAR para abortar) ---
+Nombre: Ana Rojas
+Cedula: V-22222222
+Especialidad (MOTOR/FRENOS/ELECTRICIDAD/SUSPENSION/GENERAL): MOTOR
+Fecha de ingreso (YYYY-MM-DD): 2025-02-28
+Guardar este mecanico? (S/N): S
+Mecanico 'Ana Rojas' registrado correctamente (ID 2).
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 1) Registrar 4 repuestos (BUJ-005 queda con stock igual a su stock minimo: 5 y 5)
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: FRN-001
+Nombre: Pastillas delanteras
+Marca: Brembo
+Precio: 25.00
+Stock inicial: 10
+Stock minimo: 3
+Guardar este repuesto? (S/N): S
+Repuesto 'FRN-001' registrado correctamente (ID 1).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: FRN-014
+Nombre: Liquido de frenos DOT4
+Marca: Bosch
+Precio: 12.50
+Stock inicial: 5
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'FRN-014' registrado correctamente (ID 2).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: FIL-020
+Nombre: Filtro de aceite
+Marca: Mann
+Precio: 8.00
+Stock inicial: 6
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'FIL-020' registrado correctamente (ID 3).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: BUJ-005
+Nombre: Bujia de iridio
+Marca: NGK
+Precio: 4.50
+Stock inicial: 5
+Stock minimo: 5
+Guardar este repuesto? (S/N): S
+Repuesto 'BUJ-005' registrado correctamente (ID 4).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+Seleccione una opcion: 0
+Seguro que desea salir? (S/N): S
+
+Hasta pronto. Los datos quedaron guardados en la carpeta 'datos'.

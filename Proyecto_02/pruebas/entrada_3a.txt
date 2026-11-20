@@ -1,0 +1,39 @@
+# ##############################################################
+# CASO DE USO 3 (ejecucion A): La orden sobrevive con su detalle
+# ##############################################################
+# 1) Abrir una orden para AB123CD con kilometraje 45000 (mecanico Jose = ID 1)
+4
+1
+AB123CD
+1
+45000
+Ruido al frenar
+S
+0
+# 1) Agregar 3 repuestos distintos: 2 de FRN-001, 1 de FRN-014 y 1 de FIL-020
+4
+2
+1
+FRN-001
+2
+0
+4
+2
+1
+FRN-014
+1
+0
+4
+2
+1
+FIL-020
+1
+0
+# Mostrar la orden antes de cerrar el programa
+4
+6
+1
+0
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+0
+S

@@ -1,0 +1,3 @@
+ERROR: El archivo 'datos/mecanicos.bin' no esta listo: no se pudo crear o su header esta danado.
+       Restaure un respaldo o borre ese archivo para que se cree vacio.
+codigo de salida del programa: 1   (se esperaba 1)

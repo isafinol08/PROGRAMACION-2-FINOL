@@ -1,0 +1,7 @@
+# ##############################################################
+# VALIDACIONES (9c): archivo danado
+# ##############################################################
+# mecanicos.bin quedo con solo 5 bytes (sin header completo). El programa debe avisar cual archivo es y NO continuar
+# Esta entrada no deberia llegar a leerse
+0
+S

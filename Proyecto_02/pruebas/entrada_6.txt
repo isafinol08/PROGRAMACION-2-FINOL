@@ -1,0 +1,90 @@
+# ##############################################################
+# CASO DE USO 6: Baja de mecanico e historial
+# ##############################################################
+# (preparacion) registrar un tercer mecanico: Luis Fuenmayor = ID 3
+2
+1
+Luis Fuenmayor
+V-33333333
+GENERAL
+2023-09-01
+S
+0
+# (preparacion) Jose abre una orden para AB123CD (sera la orden #3)
+4
+1
+AB123CD
+1
+46000
+Falla de arranque
+S
+0
+# 1) Dar de baja a Jose con una orden ABIERTA -> rechazado
+2
+4
+1
+S
+0
+# 2) Cerrar esa orden (mano de obra 30) y darlo de baja -> aceptado
+4
+4
+3
+30
+S
+0
+2
+4
+1
+S
+0
+# 3) Mostrar sus ordenes cerradas: siguen mostrando su nombre, marcado (BAJA)
+4
+7
+3
+0
+# 4) Abrir una orden nueva con ese mecanico -> rechazado
+4
+1
+PQ111AA
+1
+0
+# (extra) Limite de 3 ordenes ABIERTAS por mecanico: Ana (ID 2) abre 3 y la cuarta se rechaza
+4
+1
+PQ111AA
+2
+150000
+Ruido en motor
+S
+0
+4
+1
+PQ222BB
+2
+30000
+Recalentamiento
+S
+0
+4
+1
+PQ333CC
+2
+20000
+Vibracion
+S
+0
+4
+1
+XY987ZW
+2
+128300
+Humo azul
+S
+0
+# Estado final de los mecanicos (Jose de baja, Ana con 3 ordenes abiertas)
+2
+3
+0
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+0
+S

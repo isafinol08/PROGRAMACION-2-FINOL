@@ -1,0 +1,21 @@
+# ##############################################################
+# CASO DE USO 5 (ejecucion A): Anulacion con reversion en disco
+# ##############################################################
+# Stock de los repuestos ANTES de anular (FRN-001 = 5)
+3
+6
+0
+# 1) Anular la orden #2 (CERRADA, con 15 lineas)
+4
+5
+2
+S
+0
+# Verificar estado ANULADA
+4
+6
+2
+0
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+0
+S

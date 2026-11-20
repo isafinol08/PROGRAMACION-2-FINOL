@@ -1,0 +1,11 @@
+# ##############################################################
+# CASO DE USO 7 (ejecucion B): Integridad tras una restauracion parcial
+# ##############################################################
+# 3) Entre las dos ejecuciones se reemplazo manualmente datos/vehiculos.bin por la copia del backup
+# 4) Ejecutar la verificacion de integridad: debe detectar la orden #7 que apunta a un vehiculo inexistente
+6
+1
+0
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+0
+S

@@ -1,0 +1,189 @@
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 3 (ejecucion C): La orden sobrevive con su detalle
+# ##############################################################
+# 6) Se reinicio el programa. Mostrar la orden: total = 4*25.00 + 1*8.00 + 2*4.50 + 40.00 = 157.00
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 6
+
+--- DETALLE DE ORDEN ---
+Numero de orden: 1
+
+---------------------------------------------------------
+ORDEN DE SERVICIO #1
+---------------------------------------------------------
+Estado   : CERRADA   Apertura: 2026-11-19   Cierre: 2026-11-19
+Vehiculo : AB123CD - Toyota Corolla (45000 km al ingreso)
+Mecanico : Jose Perez
+Falla    : Ruido al frenar
+---------------------------------------------------------
+Codigo     Repuesto                  Cant    P.Unit      Total
+FRN-001    Pastillas delanteras         4     25.00     100.00
+FIL-020    Filtro de aceite             1      8.00       8.00
+BUJ-005    Bujia de iridio              2      4.50       9.00
+---------------------------------------------------------
+Repuestos    :     117.00
+Mano de obra :      40.00
+TOTAL        :     157.00
+(Lineas de detalle: 3 de 15)
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# PRECIO HISTORICO: cambiar el precio de FRN-001 a 30.00 despues de cerrar la orden
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- CAMBIAR PRECIO (escriba CANCELAR para abortar) ---
+Codigo del repuesto: FRN-001
+Precio actual de 'Pastillas delanteras': 25.00
+Nuevo precio: 30.00
+Cambiar el precio? (las ordenes ya registradas no cambian) (S/N): S
+Precio de 'Pastillas delanteras' actualizado a 30.00.
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# El detalle de la orden #1 NO cambia (total 157.00)
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 6
+
+--- DETALLE DE ORDEN ---
+Numero de orden: 1
+
+---------------------------------------------------------
+ORDEN DE SERVICIO #1
+---------------------------------------------------------
+Estado   : CERRADA   Apertura: 2026-11-19   Cierre: 2026-11-19
+Vehiculo : AB123CD - Toyota Corolla (45000 km al ingreso)
+Mecanico : Jose Perez
+Falla    : Ruido al frenar
+---------------------------------------------------------
+Codigo     Repuesto                  Cant    P.Unit      Total
+FRN-001    Pastillas delanteras         4     25.00     100.00
+FIL-020    Filtro de aceite             1      8.00       8.00
+BUJ-005    Bujia de iridio              2      4.50       9.00
+---------------------------------------------------------
+Repuestos    :     117.00
+Mano de obra :      40.00
+TOTAL        :     157.00
+(Lineas de detalle: 3 de 15)
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+Seleccione una opcion: 0
+Seguro que desea salir? (S/N): S
+
+Hasta pronto. Los datos quedaron guardados en la carpeta 'datos'.

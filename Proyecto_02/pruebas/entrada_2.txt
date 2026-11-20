@@ -1,0 +1,65 @@
+# ##############################################################
+# CASO DE USO 2: Acceso directo por ID
+# ##############################################################
+# 1) Registrar 6 vehiculos en total (IDs 1 a 6): ya estan los 3 anteriores, se registran 3 mas
+1
+1
+PQ111AA
+Honda
+Civic
+2005
+150000
+Luis Perez
+V-1000001
+0414-0000001
+S
+0
+1
+1
+PQ222BB
+Mazda
+Tres
+2019
+30000
+Ana Salas
+V-1000002
+0414-0000002
+S
+0
+1
+1
+PQ333CC
+Kia
+Rio
+2020
+20000
+Jorge Diaz
+E-1000003
+0414-0000003
+S
+0
+# 2) Eliminar logicamente el vehiculo ID 3 (placa LM456NP)
+1
+4
+LM456NP
+S
+0
+# 3) Buscar el vehiculo ID 5 sin recorrer el archivo: muestra la posicion en bytes (16 + (5-1)*288 = 1168)
+1
+2
+1
+5
+0
+# 4) Buscar el vehiculo ID 3 -> debe informar que fue ELIMINADO (no que no existe)
+1
+2
+1
+3
+0
+# Listar: quedan 5 vehiculos activos
+1
+5
+0
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+0
+S

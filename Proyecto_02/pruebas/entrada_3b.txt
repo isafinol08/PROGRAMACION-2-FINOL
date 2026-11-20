@@ -1,0 +1,37 @@
+# ##############################################################
+# CASO DE USO 3 (ejecucion B): La orden sobrevive con su detalle
+# ##############################################################
+# 2) Se reinicio el programa. 3) Agregar un 4to repuesto: 2 unidades de BUJ-005
+4
+2
+1
+BUJ-005
+2
+0
+# 3) Agregar 2 unidades mas de FRN-001 -> se acumulan: UNA sola linea de FRN-001 con 4 unidades
+4
+2
+1
+FRN-001
+2
+0
+# 4) Quitar FRN-014 (1 unidad) -> su stock vuelve a 5 en repuestos.bin
+4
+3
+1
+FRN-014
+0
+# Inventario despues de quitar: FRN-001 = 6 y FRN-014 = 5
+3
+6
+0
+# 5) Cerrar la orden registrando mano de obra 40
+4
+4
+1
+40
+S
+0
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+0
+S

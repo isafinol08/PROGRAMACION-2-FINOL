@@ -1,0 +1,23 @@
+# ##############################################################
+# CASO DE USO 3 (ejecucion C): La orden sobrevive con su detalle
+# ##############################################################
+# 6) Se reinicio el programa. Mostrar la orden: total = 4*25.00 + 1*8.00 + 2*4.50 + 40.00 = 157.00
+4
+6
+1
+0
+# PRECIO HISTORICO: cambiar el precio de FRN-001 a 30.00 despues de cerrar la orden
+3
+4
+FRN-001
+30.00
+S
+0
+# El detalle de la orden #1 NO cambia (total 157.00)
+4
+6
+1
+0
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+0
+S

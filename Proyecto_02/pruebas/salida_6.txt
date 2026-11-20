@@ -1,0 +1,629 @@
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 6: Baja de mecanico e historial
+# ##############################################################
+# (preparacion) registrar un tercer mecanico: Luis Fuenmayor = ID 3
+Seleccione una opcion: 2
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR MECANICO (escriba CANCELAR para abortar) ---
+Nombre: Luis Fuenmayor
+Cedula: V-33333333
+Especialidad (MOTOR/FRENOS/ELECTRICIDAD/SUSPENSION/GENERAL): GENERAL
+Fecha de ingreso (YYYY-MM-DD): 2023-09-01
+Guardar este mecanico? (S/N): S
+Mecanico 'Luis Fuenmayor' registrado correctamente (ID 3).
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# (preparacion) Jose abre una orden para AB123CD (sera la orden #3)
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: AB123CD
+Vehiculo: AB123CD - Toyota Corolla (45000 km), propietario Maria Gonzalez
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  0        Activo
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  0        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  0        Activo
+Total mostrados: 3
+ID del mecanico: 1
+Kilometraje de ingreso: 46000
+Falla reportada: Falla de arranque
+Se abrira una orden para 'AB123CD' con el mecanico Jose Perez (46000 km).
+Abrir esta orden? (S/N): S
+Orden #3 abierta para el vehiculo 'AB123CD' con el mecanico Jose Perez.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 1) Dar de baja a Jose con una orden ABIERTA -> rechazado
+Seleccione una opcion: 2
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- DAR DE BAJA MECANICO (escriba CANCELAR para abortar) ---
+ID del mecanico: 1
+Mecanico: Jose Perez (FRENOS)
+Dar de baja a este mecanico? (S/N): S
+ERROR: El mecanico 'Jose Perez' tiene 1 orden(es) ABIERTA(S) y no puede darse de baja.
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 2) Cerrar esa orden (mano de obra 30) y darlo de baja -> aceptado
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- CERRAR ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 3
+Mano de obra: 30
+Cerrar esta orden? Ya no podra modificarse (S/N): S
+Orden #3 cerrada correctamente. Total: 30.00
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 2
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- DAR DE BAJA MECANICO (escriba CANCELAR para abortar) ---
+ID del mecanico: 1
+Mecanico: Jose Perez (FRENOS)
+Dar de baja a este mecanico? (S/N): S
+Mecanico 'Jose Perez' dado de baja. Su historial se conserva.
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 3) Mostrar sus ordenes cerradas: siguen mostrando su nombre, marcado (BAJA)
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 7
+
+--- LISTAR ORDENES ---
+1. Todas
+2. Abiertas
+3. Cerradas
+4. Anuladas
+5. Historial de un vehiculo
+0. Volver
+Seleccione una opcion: 3
+Orden  Estado    Vehiculo                       Mecanico               Apertura         Total
+#1     CERRADA   AB123CD - Toyota Corolla       Jose Perez (BAJA)      2026-11-19      157.00
+#3     CERRADA   AB123CD - Toyota Corolla       Jose Perez (BAJA)      2026-11-19       30.00
+Total de ordenes: 2
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 4) Abrir una orden nueva con ese mecanico -> rechazado
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: PQ111AA
+Vehiculo: PQ111AA - Honda Civic (150000 km), propietario Luis Perez
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  0        BAJA
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  0        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  0        Activo
+Total mostrados: 3
+ID del mecanico: 1
+ERROR: El mecanico 'Jose Perez' esta dado de baja y no puede recibir ordenes.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# (extra) Limite de 3 ordenes ABIERTAS por mecanico: Ana (ID 2) abre 3 y la cuarta se rechaza
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: PQ111AA
+Vehiculo: PQ111AA - Honda Civic (150000 km), propietario Luis Perez
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  0        BAJA
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  0        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  0        Activo
+Total mostrados: 3
+ID del mecanico: 2
+Kilometraje de ingreso: 150000
+Falla reportada: Ruido en motor
+Se abrira una orden para 'PQ111AA' con el mecanico Ana Rojas (150000 km).
+Abrir esta orden? (S/N): S
+Orden #4 abierta para el vehiculo 'PQ111AA' con el mecanico Ana Rojas.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: PQ222BB
+Vehiculo: PQ222BB - Mazda Tres (30000 km), propietario Ana Salas
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  0        BAJA
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  1        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  0        Activo
+Total mostrados: 3
+ID del mecanico: 2
+Kilometraje de ingreso: 30000
+Falla reportada: Recalentamiento
+Se abrira una orden para 'PQ222BB' con el mecanico Ana Rojas (30000 km).
+Abrir esta orden? (S/N): S
+Orden #5 abierta para el vehiculo 'PQ222BB' con el mecanico Ana Rojas.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: PQ333CC
+Vehiculo: PQ333CC - Kia Rio (20000 km), propietario Jorge Diaz
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  0        BAJA
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  2        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  0        Activo
+Total mostrados: 3
+ID del mecanico: 2
+Kilometraje de ingreso: 20000
+Falla reportada: Vibracion
+Se abrira una orden para 'PQ333CC' con el mecanico Ana Rojas (20000 km).
+Abrir esta orden? (S/N): S
+Orden #6 abierta para el vehiculo 'PQ333CC' con el mecanico Ana Rojas.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: XY987ZW
+Vehiculo: XY987ZW - Chevrolet Aveo (128300 km), propietario Maria Gonzalez
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  0        BAJA
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  3        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  0        Activo
+Total mostrados: 3
+ID del mecanico: 2
+Kilometraje de ingreso: 128300
+Falla reportada: Humo azul
+Se abrira una orden para 'XY987ZW' con el mecanico Ana Rojas (128300 km).
+Abrir esta orden? (S/N): S
+ERROR: El mecanico 'Ana Rojas' ya tiene 3 ordenes abiertas.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Estado final de los mecanicos (Jose de baja, Ana con 3 ordenes abiertas)
+Seleccione una opcion: 2
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 3
+
+--- LISTA DE MECANICOS ---
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  0        BAJA
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  3        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  0        Activo
+Total mostrados: 3
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+Seleccione una opcion: 0
+Seguro que desea salir? (S/N): S
+
+Hasta pronto. Los datos quedaron guardados en la carpeta 'datos'.

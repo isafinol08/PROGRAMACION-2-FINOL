@@ -1,0 +1,19 @@
+# ##############################################################
+# CASO DE USO 1 (ejecucion B): Persistencia entre ejecuciones - se reinicio el programa
+# ##############################################################
+# 2) Se cerro el programa y se volvio a ejecutar: no pide los datos del taller (ya existe taller.bin)
+# 3) Los 3 vehiculos siguen presentes con los mismos IDs (1 a 3)
+1
+5
+0
+# 3) Los 2 mecanicos siguen presentes (IDs 1 y 2)
+2
+3
+0
+# 3) Los 4 repuestos siguen presentes; BUJ-005 aparece como BAJO STOCK
+3
+6
+0
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+0
+S

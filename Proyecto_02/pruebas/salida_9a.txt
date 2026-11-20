@@ -1,0 +1,2191 @@
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ##############################################################
+# VALIDACIONES (9a): formatos y reglas de negocio, sobre la carpeta datos/ pre-poblada
+# ##############################################################
+# ===== MENUS: opcion invalida, texto y opcion fuera de rango (se rechazan y se vuelve a pedir) =====
+Seleccione una opcion: hola
+ERROR: 'hola' no es una opcion valida.
+Seleccione una opcion: 99
+ERROR: Elija una opcion entre 0 y 6.
+Seleccione una opcion: -1
+ERROR: Elija una opcion entre 0 y 6.
+
+# ===== VEHICULOS =====
+# Placa invalida (AB-1), placa duplicada (AB123CD) y CANCELAR: no se crea nada
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: AB-1
+ERROR: La placa 'AB-1' no es valida (6 o 7 caracteres alfanumericos).
+Placa: AB123CD
+ERROR: Ya existe un vehiculo activo con la placa 'AB123CD'.
+Placa: CANCELAR
+Operacion cancelada. No se creo ningun vehiculo.
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Anio con texto o fuera de rango, km negativo, cedula invalida; al final se guarda el vehiculo ZZ111AA
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: ZZ111AA
+Marca: Kia
+Modelo: Rio
+Anio (1950-2027): abc
+ERROR: 'abc' no es un numero entero valido.
+Anio (1950-2027): 1949
+ERROR: El valor debe estar entre 1950 y 2027.
+Anio (1950-2027): 2028
+ERROR: El valor debe estar entre 1950 y 2027.
+Anio (1950-2027): 2020
+Kilometraje: -5
+ERROR: El valor debe ser mayor o igual a 0.
+Kilometraje: 20000
+Nombre del propietario: Test Uno
+Cedula del propietario: 12ab
+ERROR: La cedula '12AB' no es valida (solo digitos, prefijo opcional V-, E- o J-).
+Cedula del propietario: V-5555555
+Telefono del propietario: 0414-5555555
+
+Datos a guardar:
+  Vehiculo    : ZZ111AA - Kia Rio 2020 (ID 0)
+  Kilometraje : 20000 km
+  Propietario : Test Uno | Cedula: V-5555555 | Tel: 0414-5555555
+Guardar este vehiculo? (S/N): S
+Vehiculo 'ZZ111AA' registrado correctamente (ID 9).
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Eliminar ZZ111AA (sin ordenes): aceptado. Eliminar AB123CD (tiene ordenes): rechazado
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- ELIMINAR VEHICULO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: ZZ111AA
+  Vehiculo    : ZZ111AA - Kia Rio 2020 (ID 9)
+  Kilometraje : 20000 km
+  Propietario : Test Uno | Cedula: V-5555555 | Tel: 0414-5555555
+Eliminar este vehiculo? (S/N): S
+Vehiculo 'ZZ111AA' eliminado (borrado logico).
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- ELIMINAR VEHICULO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: AB123CD
+  Vehiculo    : AB123CD - Toyota Corolla 2015 (ID 1)
+  Kilometraje : 46000 km
+  Propietario : Maria Gonzalez | Cedula: V-12345678 | Tel: 0414-1111111
+Eliminar este vehiculo? (S/N): S
+ERROR: El vehiculo 'AB123CD' tiene ordenes registradas (2) y no puede eliminarse.
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# La placa de un vehiculo eliminado SI puede volver a registrarse
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: ZZ111AA
+Marca: Kia
+Modelo: Rio
+Anio (1950-2027): 2020
+Kilometraje: 20000
+Nombre del propietario: Test Uno
+Cedula del propietario: V-5555555
+Telefono del propietario: 0414-5555555
+
+Datos a guardar:
+  Vehiculo    : ZZ111AA - Kia Rio 2020 (ID 0)
+  Kilometraje : 20000 km
+  Propietario : Test Uno | Cedula: V-5555555 | Tel: 0414-5555555
+Guardar este vehiculo? (S/N): S
+Vehiculo 'ZZ111AA' registrado correctamente (ID 10).
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Buscar una placa que no existe y un ID que no existe
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- BUSCAR VEHICULO ---
+1. Por ID
+2. Por placa exacta
+3. Por propietario (nombre parcial)
+0. Volver
+Seleccione una opcion: 2
+Placa del vehiculo: ZZ999ZZ
+ERROR: No existe un vehiculo activo con la placa 'ZZ999ZZ'.
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- BUSCAR VEHICULO ---
+1. Por ID
+2. Por placa exacta
+3. Por propietario (nombre parcial)
+0. Volver
+Seleccione una opcion: 1
+ID del vehiculo: 999
+ERROR: No existe un vehiculo con ID 999.
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 5
+
+--- LISTA DE VEHICULOS ---
+ID   Placa    Marca      Modelo     Anio  Km       Propietario            Cedula      
+1    AB123CD  Toyota     Corolla    2015  46000    Maria Gonzalez         V-12345678  
+2    XY987ZW  Chevrolet  Aveo       2009  128500   Maria Gonzalez         V-12345678  
+3    LM456NP  Ford       Fiesta     2012  90000    Pedro Ramirez          V-9876543   
+4    KL789QR  Renault    Logan      2018  60000    Carlos Mendoza         V-15555555  
+5    PQ111AA  Honda      Civic      2005  150000   Luis Perez             V-1000001   
+6    PQ222BB  Mazda      Tres       2019  30000    Ana Salas              V-1000002   
+7    PQ333CC  Kia        Rio        2020  20000    Jorge Diaz             E-1000003   
+8    PQ444DD  Hyundai    Accent     2017  70000    Rosa Pinto             V-1000004   
+10   ZZ111AA  Kia        Rio        2020  20000    Test Uno               V-5555555   
+Total mostrados: 9
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ===== MECANICOS =====
+# Especialidad invalida (turbo), fecha invalida (2025-02-30) y cedula duplicada (V-11111111)
+Seleccione una opcion: 2
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR MECANICO (escriba CANCELAR para abortar) ---
+Nombre: Pedro Test
+Cedula: V-11111111
+Especialidad (MOTOR/FRENOS/ELECTRICIDAD/SUSPENSION/GENERAL): turbo
+ERROR: Especialidad no valida. Use MOTOR, FRENOS, ELECTRICIDAD, SUSPENSION o GENERAL.
+Especialidad (MOTOR/FRENOS/ELECTRICIDAD/SUSPENSION/GENERAL): frenos
+Fecha de ingreso (YYYY-MM-DD): 2025-02-30
+ERROR: La fecha '2025-02-30' no es valida. Use el formato YYYY-MM-DD.
+Fecha de ingreso (YYYY-MM-DD): 2025-02-28
+Guardar este mecanico? (S/N): S
+ERROR: Ya existe un mecanico con la cedula 'V-11111111'.
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Baja con orden ABIERTA (Jose Perez) -> rechazada; baja de uno ya dado de baja; ID inexistente
+Seleccione una opcion: 2
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- DAR DE BAJA MECANICO (escriba CANCELAR para abortar) ---
+ID del mecanico: 1
+Mecanico: Jose Perez (FRENOS)
+Dar de baja a este mecanico? (S/N): S
+ERROR: El mecanico 'Jose Perez' tiene 1 orden(es) ABIERTA(S) y no puede darse de baja.
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 2
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- DAR DE BAJA MECANICO (escriba CANCELAR para abortar) ---
+ID del mecanico: 4
+ERROR: El mecanico 'Carlos Medina' ya estaba dado de baja.
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 2
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- DAR DE BAJA MECANICO (escriba CANCELAR para abortar) ---
+ID del mecanico: 99
+ERROR: No existe un mecanico con ID 99.
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 2
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 3
+
+--- LISTA DE MECANICOS ---
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  1        Activo
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  0        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  1        Activo
+4    Carlos Medina          V-44444444   ELECTRICIDAD  2022-06-10  0        BAJA
+Total mostrados: 4
+
+=============================================
+  GESTION DE MECANICOS
+=============================================
+1. Registrar mecanico
+2. Buscar mecanico
+3. Listar mecanicos
+4. Dar de baja mecanico
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ===== REPUESTOS =====
+# Codigo duplicado (FRN-001), precio 0 / texto / negativo, stock negativo; al final se guarda TST-001
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo: FRN-001
+ERROR: Ya existe un repuesto activo con el codigo 'FRN-001'.
+Codigo: TST-001
+Nombre: Repuesto test
+Marca: Marca
+Precio: 0
+ERROR: El valor debe ser mayor que 0.
+Precio: abc
+ERROR: 'abc' no es un numero valido.
+Precio: -3
+ERROR: El valor debe ser mayor que 0.
+Precio: 5.50
+Stock inicial: -1
+ERROR: El valor debe ser mayor o igual a 0.
+Stock inicial: 10
+Stock minimo: 2
+Guardar este repuesto? (S/N): S
+Repuesto 'TST-001' registrado correctamente (ID 13).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Entrada de mercancia: cantidad 0, texto y negativa se rechazan; 5 se acepta; codigo inexistente
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 3
+
+--- ENTRADA DE MERCANCIA (escriba CANCELAR para abortar) ---
+Codigo del repuesto: TST-001
+Cantidad que entra: 0
+ERROR: El valor debe ser mayor o igual a 1.
+Cantidad que entra: abc
+ERROR: 'abc' no es un numero entero valido.
+Cantidad que entra: -4
+ERROR: El valor debe ser mayor o igual a 1.
+Cantidad que entra: 5
+Entrada registrada: 'Repuesto test' pasa de 10 a 15 unidades.
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 3
+
+--- ENTRADA DE MERCANCIA (escriba CANCELAR para abortar) ---
+Codigo del repuesto: NOEXISTE
+ERROR: No existe un repuesto activo con el codigo 'NOEXISTE'.
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Cambiar precio: negativo y 0.00 se rechazan; 7.25 se acepta
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- CAMBIAR PRECIO (escriba CANCELAR para abortar) ---
+Codigo del repuesto: TST-001
+Precio actual de 'Repuesto test': 5.50
+Nuevo precio: -2
+ERROR: El valor debe ser mayor que 0.
+Nuevo precio: 0.00
+ERROR: El valor debe ser mayor que 0.
+Nuevo precio: 7.25
+Cambiar el precio? (las ordenes ya registradas no cambian) (S/N): S
+Precio de 'Repuesto test' actualizado a 7.25.
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Eliminar FRN-001 (usado en ordenes) -> rechazado; eliminar TST-001 (sin uso) -> aceptado
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 5
+
+--- ELIMINAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo del repuesto: FRN-001
+Eliminar este repuesto? (S/N): S
+ERROR: El repuesto 'Pastillas delanteras' aparece en el detalle de alguna orden y no puede eliminarse.
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 5
+
+--- ELIMINAR REPUESTO (escriba CANCELAR para abortar) ---
+Codigo del repuesto: TST-001
+Eliminar este repuesto? (S/N): S
+Repuesto 'Repuesto test' eliminado (borrado logico).
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 3
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 6
+
+--- INVENTARIO DE REPUESTOS ---
+ID   Codigo     Nombre                   Marca         Precio  Stock    Min  Alerta
+1    FRN-001    Pastillas delanteras     Brembo         25.00     27      5  
+2    FRN-014    Liquido de frenos DOT4   Bosch          12.50     29      5  
+3    FIL-020    Filtro de aceite         Mann            8.00     27      5  
+4    FIL-021    Filtro de aire           Mann           11.00     29      5  
+5    BUJ-005    Bujia de iridio          NGK             4.50      4      5  BAJO STOCK
+6    BAT-100    Bateria 12V 60Ah         Duncan         95.00     27      3  
+7    ACE-010    Aceite 10W40 (litro)     Mobil           6.50     22     10  
+8    ACE-020    Aceite 5W30 (litro)      Mobil           7.50     26     10  
+9    COR-030    Correa de distribucion   Gates          40.00     29      3  
+10   AMO-040    Amortiguador delantero   Monroe         55.00     28      4  
+11   LUC-050    Bombillo H7              Philips         9.00     25      6  
+12   REF-060    Refrigerante (galon)     Prestone       14.00     28      5  
+Total mostrados: 12
+
+=============================================
+  INVENTARIO DE REPUESTOS
+=============================================
+1. Registrar repuesto
+2. Buscar repuesto
+3. Entrada de mercancia
+4. Cambiar precio
+5. Eliminar repuesto
+6. Listar inventario
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ===== ORDENES: apertura =====
+# Vehiculo con orden ABIERTA (AB123CD) -> rechazado
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: AB123CD
+Vehiculo: AB123CD - Toyota Corolla (46000 km), propietario Maria Gonzalez
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  1        Activo
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  0        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  1        Activo
+4    Carlos Medina          V-44444444   ELECTRICIDAD  2022-06-10  0        BAJA
+Total mostrados: 4
+ID del mecanico: 2
+Kilometraje de ingreso: 46500
+Falla reportada: Otra falla
+Se abrira una orden para 'AB123CD' con el mecanico Ana Rojas (46500 km).
+Abrir esta orden? (S/N): S
+ERROR: El vehiculo 'AB123CD' ya tiene una orden ABIERTA.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Placa inexistente, mecanico inexistente (99) y mecanico dado de baja (4)
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: ZZ999ZZ
+ERROR: No existe un vehiculo activo con la placa 'ZZ999ZZ'.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: KL789QR
+Vehiculo: KL789QR - Renault Logan (60000 km), propietario Carlos Mendoza
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  1        Activo
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  0        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  1        Activo
+4    Carlos Medina          V-44444444   ELECTRICIDAD  2022-06-10  0        BAJA
+Total mostrados: 4
+ID del mecanico: 99
+ERROR: No existe un mecanico con ID 99.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: KL789QR
+Vehiculo: KL789QR - Renault Logan (60000 km), propietario Carlos Mendoza
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  1        Activo
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  0        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  1        Activo
+4    Carlos Medina          V-44444444   ELECTRICIDAD  2022-06-10  0        BAJA
+Total mostrados: 4
+ID del mecanico: 4
+ERROR: El mecanico 'Carlos Medina' esta dado de baja y no puede recibir ordenes.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Kilometraje menor al registrado (texto y negativo tambien se rechazan)
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: PQ333CC
+Vehiculo: PQ333CC - Kia Rio (20000 km), propietario Jorge Diaz
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  1        Activo
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  0        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  1        Activo
+4    Carlos Medina          V-44444444   ELECTRICIDAD  2022-06-10  0        BAJA
+Total mostrados: 4
+ID del mecanico: 2
+Kilometraje de ingreso: abc
+ERROR: 'abc' no es un numero entero valido.
+Kilometraje de ingreso: -5
+ERROR: El valor debe ser mayor o igual a 0.
+Kilometraje de ingreso: 100
+Falla reportada: Falla
+Se abrira una orden para 'PQ333CC' con el mecanico Ana Rojas (100 km).
+Abrir esta orden? (S/N): S
+ERROR: El kilometraje 100 es menor al registrado del vehiculo 'PQ333CC' (20000 km).
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# El mecanico Ana (ID 2) abre 3 ordenes (#11, #12, #13) y la cuarta se rechaza
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: KL789QR
+Vehiculo: KL789QR - Renault Logan (60000 km), propietario Carlos Mendoza
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  1        Activo
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  0        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  1        Activo
+4    Carlos Medina          V-44444444   ELECTRICIDAD  2022-06-10  0        BAJA
+Total mostrados: 4
+ID del mecanico: 2
+Kilometraje de ingreso: 60000
+Falla reportada: Cambio de aceite
+Se abrira una orden para 'KL789QR' con el mecanico Ana Rojas (60000 km).
+Abrir esta orden? (S/N): S
+Orden #11 abierta para el vehiculo 'KL789QR' con el mecanico Ana Rojas.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: PQ111AA
+Vehiculo: PQ111AA - Honda Civic (150000 km), propietario Luis Perez
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  1        Activo
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  1        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  1        Activo
+4    Carlos Medina          V-44444444   ELECTRICIDAD  2022-06-10  0        BAJA
+Total mostrados: 4
+ID del mecanico: 2
+Kilometraje de ingreso: 150000
+Falla reportada: Ruido en motor
+Se abrira una orden para 'PQ111AA' con el mecanico Ana Rojas (150000 km).
+Abrir esta orden? (S/N): S
+Orden #12 abierta para el vehiculo 'PQ111AA' con el mecanico Ana Rojas.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: PQ222BB
+Vehiculo: PQ222BB - Mazda Tres (30000 km), propietario Ana Salas
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  1        Activo
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  2        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  1        Activo
+4    Carlos Medina          V-44444444   ELECTRICIDAD  2022-06-10  0        BAJA
+Total mostrados: 4
+ID del mecanico: 2
+Kilometraje de ingreso: 30000
+Falla reportada: Recalentamiento
+Se abrira una orden para 'PQ222BB' con el mecanico Ana Rojas (30000 km).
+Abrir esta orden? (S/N): S
+Orden #13 abierta para el vehiculo 'PQ222BB' con el mecanico Ana Rojas.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- ABRIR ORDEN DE SERVICIO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: PQ333CC
+Vehiculo: PQ333CC - Kia Rio (20000 km), propietario Jorge Diaz
+ID   Nombre                 Cedula       Especialidad  Ingreso     Abiertas Estado
+1    Jose Perez             V-11111111   FRENOS        2024-03-15  1        Activo
+2    Ana Rojas              V-22222222   MOTOR         2025-02-28  3        Activo
+3    Luis Fuenmayor         V-33333333   GENERAL       2023-09-01  1        Activo
+4    Carlos Medina          V-44444444   ELECTRICIDAD  2022-06-10  0        BAJA
+Total mostrados: 4
+ID del mecanico: 2
+Kilometraje de ingreso: 20000
+Falla reportada: Vibracion
+Se abrira una orden para 'PQ333CC' con el mecanico Ana Rojas (20000 km).
+Abrir esta orden? (S/N): S
+ERROR: El mecanico 'Ana Rojas' ya tiene 3 ordenes abiertas.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ===== ORDENES: modificaciones =====
+# Mas unidades que el stock; cantidad con texto y 0 se rechazan, luego 3 se acepta
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 11
+Codigo del repuesto: FRN-001
+Cantidad: 99999
+ERROR: Stock insuficiente de 'Pastillas delanteras'. Disponible: 27, solicitado: 99999.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 11
+Codigo del repuesto: FRN-001
+Cantidad: abc
+ERROR: 'abc' no es un numero entero valido.
+Cantidad: 0
+ERROR: El valor debe ser mayor o igual a 1.
+Cantidad: 3
+Se agregaron 3 unidad(es) de 'Pastillas delanteras' a la orden #11. Stock restante: 24.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Orden inexistente (99) y repuesto inexistente
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 99
+ERROR: No existe la orden #99.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 11
+Codigo del repuesto: NOEXISTE
+ERROR: No existe un repuesto activo con el codigo 'NOEXISTE'.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Modificar una orden CERRADA (#1): el mensaje indica su estado
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- AGREGAR REPUESTO A ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Codigo del repuesto: FRN-001
+Cantidad: 1
+ERROR: La orden #1 esta CERRADA y no admite esta operacion.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 3
+
+--- QUITAR REPUESTO DE ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+Codigo del repuesto a quitar: FRN-001
+ERROR: La orden #1 esta CERRADA y no admite esta operacion.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- CERRAR ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 1
+ERROR: La orden #1 esta CERRADA y no admite esta operacion.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Quitar un repuesto que no esta en la orden
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 3
+
+--- QUITAR REPUESTO DE ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 11
+Codigo del repuesto a quitar: ACE-020
+ERROR: El repuesto 'Aceite 5W30 (litro)' no esta en la orden #11.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Cerrar la orden #12 sin repuestos ni mano de obra: -5 se rechaza, con 0 se rechaza la orden
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- CERRAR ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 12
+Mano de obra: -5
+ERROR: El valor debe ser mayor o igual a 0.
+Mano de obra: 0
+Cerrar esta orden? Ya no podra modificarse (S/N): S
+ERROR: La orden #12 no tiene repuestos ni mano de obra y no puede cerrarse.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Anular una orden ya ANULADA (#7) y cancelar una anulacion con N
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 5
+
+--- ANULAR ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 7
+ERROR: La orden #7 esta ANULADA y no admite esta operacion.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 5
+
+--- ANULAR ORDEN (escriba CANCELAR para abortar) ---
+Numero de orden: 11
+La orden #11 esta ABIERTA. Al anularla se devolveran 3 unidad(es) al inventario.
+Anular esta orden? (S/N): N
+Operacion cancelada.
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 4
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 7
+
+--- LISTAR ORDENES ---
+1. Todas
+2. Abiertas
+3. Cerradas
+4. Anuladas
+5. Historial de un vehiculo
+0. Volver
+Seleccione una opcion: 1
+Orden  Estado    Vehiculo                       Mecanico               Apertura         Total
+#1     CERRADA   AB123CD - Toyota Corolla       Jose Perez             2026-11-18      128.50
+#2     CERRADA   XY987ZW - Chevrolet Aveo       Jose Perez             2026-11-18      193.00
+#3     CERRADA   LM456NP - Ford Fiesta          Ana Rojas              2026-11-18      226.50
+#4     CERRADA   KL789QR - Renault Logan        Ana Rojas              2026-11-18       54.00
+#5     CERRADA   PQ111AA - Honda Civic          Luis Fuenmayor         2026-11-18      125.00
+#6     CERRADA   PQ222BB - Mazda Tres           Carlos Medina (BAJA)   2026-11-18      138.00
+#7     ANULADA   PQ333CC - Kia Rio              Luis Fuenmayor         2026-11-18       26.00
+#8     ANULADA   PQ444DD - Hyundai Accent       Ana Rojas              2026-11-18       55.00
+#9     ABIERTA   AB123CD - Toyota Corolla       Jose Perez             2026-11-18       99.50
+#10    ABIERTA   XY987ZW - Chevrolet Aveo       Luis Fuenmayor         2026-11-18        7.50
+#11    ABIERTA   KL789QR - Renault Logan        Ana Rojas              2026-11-19       75.00
+#12    ABIERTA   PQ111AA - Honda Civic          Ana Rojas              2026-11-19        0.00
+#13    ABIERTA   PQ222BB - Mazda Tres           Ana Rojas              2026-11-19        0.00
+Total de ordenes: 13
+
+=============================================
+  ORDENES DE SERVICIO
+=============================================
+1. Abrir orden
+2. Agregar repuesto a orden
+3. Quitar repuesto de orden
+4. Cerrar orden
+5. Anular orden
+6. Ver detalle de orden
+7. Listar ordenes
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ===== INTEGRIDAD: despues de todas las pruebas =====
+Seleccione una opcion: 6
+
+=============================================
+  MANTENIMIENTO
+=============================================
+1. Verificar integridad
+2. Crear respaldo (backup)
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- VERIFICACION DE INTEGRIDAD ---
+
+=========================================================
+  REPORTE DE INTEGRIDAD DEL SISTEMA
+=========================================================
+  Vehiculos verificados : 10
+  Mecanicos verificados : 4
+  Repuestos verificados : 13
+  Ordenes verificadas   : 13
+
+  Problemas encontrados : 0
+  Estado: SISTEMA INTEGRO
+=========================================================
+
+=============================================
+  MANTENIMIENTO
+=============================================
+1. Verificar integridad
+2. Crear respaldo (backup)
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+Seleccione una opcion: 0
+Seguro que desea salir? (S/N): S
+
+Hasta pronto. Los datos quedaron guardados en la carpeta 'datos'.

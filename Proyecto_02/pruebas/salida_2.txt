@@ -1,0 +1,388 @@
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# ##############################################################
+# CASO DE USO 2: Acceso directo por ID
+# ##############################################################
+# 1) Registrar 6 vehiculos en total (IDs 1 a 6): ya estan los 3 anteriores, se registran 3 mas
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: PQ111AA
+Marca: Honda
+Modelo: Civic
+Anio (1950-2027): 2005
+Kilometraje: 150000
+Nombre del propietario: Luis Perez
+Cedula del propietario: V-1000001
+Telefono del propietario: 0414-0000001
+
+Datos a guardar:
+  Vehiculo    : PQ111AA - Honda Civic 2005 (ID 0)
+  Kilometraje : 150000 km
+  Propietario : Luis Perez | Cedula: V-1000001 | Tel: 0414-0000001
+Guardar este vehiculo? (S/N): S
+Vehiculo 'PQ111AA' registrado correctamente (ID 4).
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: PQ222BB
+Marca: Mazda
+Modelo: Tres
+Anio (1950-2027): 2019
+Kilometraje: 30000
+Nombre del propietario: Ana Salas
+Cedula del propietario: V-1000002
+Telefono del propietario: 0414-0000002
+
+Datos a guardar:
+  Vehiculo    : PQ222BB - Mazda Tres 2019 (ID 0)
+  Kilometraje : 30000 km
+  Propietario : Ana Salas | Cedula: V-1000002 | Tel: 0414-0000002
+Guardar este vehiculo? (S/N): S
+Vehiculo 'PQ222BB' registrado correctamente (ID 5).
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 1
+
+--- REGISTRAR VEHICULO (escriba CANCELAR en cualquier momento para abortar) ---
+Placa: PQ333CC
+Marca: Kia
+Modelo: Rio
+Anio (1950-2027): 2020
+Kilometraje: 20000
+Nombre del propietario: Jorge Diaz
+Cedula del propietario: E-1000003
+Telefono del propietario: 0414-0000003
+
+Datos a guardar:
+  Vehiculo    : PQ333CC - Kia Rio 2020 (ID 0)
+  Kilometraje : 20000 km
+  Propietario : Jorge Diaz | Cedula: E-1000003 | Tel: 0414-0000003
+Guardar este vehiculo? (S/N): S
+Vehiculo 'PQ333CC' registrado correctamente (ID 6).
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 2) Eliminar logicamente el vehiculo ID 3 (placa LM456NP)
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 4
+
+--- ELIMINAR VEHICULO (escriba CANCELAR para abortar) ---
+Placa del vehiculo: LM456NP
+  Vehiculo    : LM456NP - Ford Fiesta 2012 (ID 3)
+  Kilometraje : 90000 km
+  Propietario : Pedro Ramirez | Cedula: V-9876543 | Tel: 0424-2222222
+Eliminar este vehiculo? (S/N): S
+Vehiculo 'LM456NP' eliminado (borrado logico).
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 3) Buscar el vehiculo ID 5 sin recorrer el archivo: muestra la posicion en bytes (16 + (5-1)*288 = 1168)
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- BUSCAR VEHICULO ---
+1. Por ID
+2. Por placa exacta
+3. Por propietario (nombre parcial)
+0. Volver
+Seleccione una opcion: 1
+ID del vehiculo: 5
+[DEBUG] Vehiculo ID 5 leido en la posicion 1168 bytes = 16 + (5 - 1) * 288
+  Vehiculo    : PQ222BB - Mazda Tres 2019 (ID 5)
+  Kilometraje : 30000 km
+  Propietario : Ana Salas | Cedula: V-1000002 | Tel: 0414-0000002
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# 4) Buscar el vehiculo ID 3 -> debe informar que fue ELIMINADO (no que no existe)
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 2
+
+--- BUSCAR VEHICULO ---
+1. Por ID
+2. Por placa exacta
+3. Por propietario (nombre parcial)
+0. Volver
+Seleccione una opcion: 1
+ID del vehiculo: 3
+[DEBUG] Vehiculo ID 3 leido en la posicion 592 bytes = 16 + (3 - 1) * 288
+El vehiculo ID 3 (placa LM456NP) fue ELIMINADO.
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Listar: quedan 5 vehiculos activos
+Seleccione una opcion: 1
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 5
+
+--- LISTA DE VEHICULOS ---
+ID   Placa    Marca      Modelo     Anio  Km       Propietario            Cedula      
+1    AB123CD  Toyota     Corolla    2015  44000    Maria Gonzalez         V-12345678  
+2    XY987ZW  Chevrolet  Aveo       2009  128300   Maria Gonzalez         V-12345678  
+4    PQ111AA  Honda      Civic      2005  150000   Luis Perez             V-1000001   
+5    PQ222BB  Mazda      Tres       2019  30000    Ana Salas              V-1000002   
+6    PQ333CC  Kia        Rio        2020  20000    Jorge Diaz             E-1000003   
+Total mostrados: 5
+
+=============================================
+  GESTION DE VEHICULOS
+=============================================
+1. Registrar vehiculo
+2. Buscar vehiculo
+3. Actualizar vehiculo
+4. Eliminar vehiculo
+5. Listar vehiculos
+0. Volver al menu principal
+=============================================
+Seleccione una opcion: 0
+
+=============================================
+  SISTEMA DE GESTION DE TALLER
+  Taller: Autoservicio El Lago
+=============================================
+1. Gestion de Vehiculos
+2. Gestion de Mecanicos
+3. Inventario de Repuestos
+4. Ordenes de Servicio
+5. Reportes
+6. Mantenimiento
+0. Salir
+=============================================
+
+# Salir del programa (los datos quedan guardados en la carpeta datos/)
+Seleccione una opcion: 0
+Seguro que desea salir? (S/N): S
+
+Hasta pronto. Los datos quedaron guardados en la carpeta 'datos'.
